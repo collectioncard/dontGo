@@ -69,7 +69,8 @@ const inspectBrowser=async(page:import('@playwright/test').Page)=>page.evaluate(
  };
 });
 
-test('first mouse hover moves End Conversation once and keeps its original spot clickable',async({page})=>{
+test('first hover relocates End Conversation to the opposite corner only once',async({page})=>{
+ await page.setViewportSize({width:375,height:812});
  await page.goto('/');
  await expect(page.getByRole('button',{name:'Okay.',exact:true})).toBeVisible();
  const end=page.getByRole('button',{name:'End Conversation',exact:true});
@@ -77,10 +78,24 @@ test('first mouse hover moves End Conversation once and keeps its original spot 
  await end.hover();
  const line=page.getByText("I'll move that so you don't accidentally do that again.",{exact:true});
  await expect(line).toBeVisible();
- await expect.poll(async()=>Math.round((await end.boundingBox())!.x-before.x)).toBe(-28);
+ await expect.poll(async()=>{
+   const moved=(await end.boundingBox())!;
+   return moved.x>=0&&moved.x<24&&moved.y>=0&&moved.y<24&&before.x-moved.x>150&&before.y-moved.y>500;
+ }).toBe(true);
+ await expect(page.locator('.end-origin')).toBeHidden();
  await page.mouse.move(20,20);
  await end.hover();
  await expect(line).toHaveCount(1);
+ await end.click();
+ await expect(page.getByText('SESSION TERMINATED')).toBeVisible();
+});
+
+test('a click at the original exit position works during relocation',async({page})=>{
+ await page.goto('/');
+ await expect(page.getByRole('button',{name:'Okay.',exact:true})).toBeVisible();
+ const before=(await page.getByRole('button',{name:'End Conversation',exact:true}).boundingBox())!;
+ await page.mouse.move(before.x+before.width-3,before.y+before.height/2);
+ await expect(page.locator('.end-origin')).toBeVisible();
  await page.mouse.click(before.x+before.width-3,before.y+before.height/2);
  await expect(page.getByText('SESSION TERMINATED')).toBeVisible();
 });

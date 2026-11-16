@@ -1,4 +1,11 @@
 /* The same conversation moves from a utility into a place. */
+.app {
+  --exit-right: 8px;
+  --exit-bottom: 8px;
+  --exit-destination-left: max(8px, env(safe-area-inset-left));
+  --exit-destination-top: max(6px, env(safe-area-inset-top));
+  --exit-flight-duration: 540ms;
+}
 .world-link { display: none; }
 .transcript:focus-visible, .world:focus-visible {
   outline: 2px solid #627d6d;
@@ -59,6 +66,8 @@
 .era-legacy .end .exit-label { margin-left: 0; }
 
 .app:not(.era-legacy) {
+  --exit-right: max(16px, calc((100vw - 1250px) / 2));
+  --exit-bottom: 12px;
   --chrome: #20372d;
   --ink: #25342b;
   --muted: #586557;
@@ -202,8 +211,8 @@
 .app:not(.era-legacy) .settings { color: #415446; padding: 6px 0; font-size: 12px; }
 .app:not(.era-legacy) .end {
   min-height: 40px;
-  right: max(16px, calc((100vw - 1250px) / 2));
-  bottom: 12px;
+  right: var(--exit-right);
+  bottom: var(--exit-bottom);
   padding: 9px 13px;
   color: #263a2e;
   border: 1px solid #859481;
@@ -399,15 +408,28 @@
 .terminal small { color: #a3afa0; }
 body:has(.terminal) .audit-menu { display: none; }
 
-.end.end-shifted {
-  translate: -28px 0;
-  transition: translate 180ms ease-out;
+.app .end.end-shifted {
+  left: var(--exit-destination-left);
+  top: var(--exit-destination-top);
+  right: auto;
+  bottom: auto;
+  animation: exit-crosses-screen var(--exit-flight-duration) cubic-bezier(.25,.75,.38,1) both;
 }
-.end.end-shifted::after {
-  content: '';
-  position: absolute;
-  inset: -1px -29px -1px -1px;
+@keyframes exit-crosses-screen {
+  from {
+    translate:
+      calc(100vw - var(--exit-right) - var(--exit-destination-left) - 100%)
+      calc(100dvh - var(--exit-bottom) - var(--exit-destination-top) - 100%);
+  }
+  to { translate: 0 0; }
 }
+/* Retain the starting click target briefly, including under reduced motion. */
+.app .end.end-origin {
+  opacity: .28;
+  animation: exit-origin-expires var(--exit-flight-duration) steps(1,end) both;
+  animation-duration: var(--exit-flight-duration) !important;
+}
+@keyframes exit-origin-expires { to { visibility: hidden; } }
 
 @media (max-width: 760px) {
   .app:not(.era-legacy) { padding: 34px 8px 65px; }
@@ -423,6 +445,6 @@ body:has(.terminal) .audit-menu { display: none; }
   .world-caption { top: 22px; }
   .world .world-caption h2 { font-size: 31px !important; margin-bottom: 6px; }
   .world-link { display: inline-block; margin-top: 9px; color: var(--muted); font: 12px Arial, sans-serif; text-underline-offset: 3px; }
-  .app:not(.era-legacy) .end { right: 12px; }
+  .app:not(.era-legacy) { --exit-right: 12px; }
   .audit-menu { right: 8px; top: 4px; }
 }
