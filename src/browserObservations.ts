@@ -7,16 +7,25 @@ export function observeBrowser(engine:Engine, getExit:()=>HTMLButtonElement|null
   let exitRegionActive=false;
   let outsideSince=-Infinity;
   let hovered=false;
+  let reportedHover=false;
   let lastActivity=0;
   let lastSize={width:window.innerWidth,height:window.innerHeight};
   let lastResizeAt=-Infinity;
 
-  function clearPointer(){
-    window.clearTimeout(approachTimer);
+  function leaveHover(){
     window.clearTimeout(hoverTimer);
-    approachTimer=undefined;
     hoverTimer=undefined;
     hovered=false;
+    if(reportedHover){
+      reportedHover=false;
+      engine.dispatch({type:'EXIT_HOVER_LEFT',at:Date.now()});
+    }
+  }
+
+  function clearPointer(){
+    window.clearTimeout(approachTimer);
+    approachTimer=undefined;
+    leaveHover();
     if(exitRegionActive)outsideSince=Date.now();
     exitRegionActive=false;
   }
@@ -44,12 +53,13 @@ export function observeBrowser(engine:Engine, getExit:()=>HTMLButtonElement|null
       },140);
     }
     if(inside===hovered)return;
-    hovered=inside;
-    window.clearTimeout(hoverTimer);
-    if(inside){
-      engine.cancelExitFlinch();
-      hoverTimer=window.setTimeout(()=>engine.dispatch({type:'EXIT_HOVERED',at:Date.now(),value:'long'}),950);
-    }
+    if(!inside){leaveHover();return}
+    hovered=true;
+    engine.cancelExitFlinch();
+    hoverTimer=window.setTimeout(()=>{
+      reportedHover=true;
+      engine.dispatch({type:'EXIT_HOVERED',at:Date.now(),value:'long'});
+    },950);
   }
 
   function cancelInteraction(){

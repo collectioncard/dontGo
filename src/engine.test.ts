@@ -2,6 +2,29 @@ import {describe,it,expect,vi,beforeEach} from 'vitest';
 import {Engine,selectBehavior,type Clock} from './engine';
 function harness(seed=123){let now=1000;let tasks:{at:number;cb:()=>void;cancelled:boolean}[]=[];const clock:Clock={now:()=>now,schedule:(ms,cb)=>{const task={at:now+ms,cb,cancelled:false};tasks.push(task);return()=>{task.cancelled=true}}};const tick=(ms:number)=>{const end=now+ms;for(;;){tasks.sort((a,b)=>a.at-b.at);const t=tasks.find(x=>!x.cancelled&&x.at<=end);if(!t)break;t.cancelled=true;now=t.at;t.cb()}now=end};return {engine:new Engine(seed,clock,null),tick};}
 beforeEach(()=>{const store=new Map<string,string>();vi.stubGlobal('localStorage',{getItem:(k:string)=>store.get(k)??null,setItem:(k:string,v:string)=>store.set(k,v),removeItem:(k:string)=>store.delete(k)})});
+it('acknowledges an initial sustained hover at ordinary seeds and avoids immediate repeats',()=>{
+ for(const seed of [0,123,1800,4294967295]){
+  const {engine,tick}=harness(seed);
+  tick(2000);
+  engine.state.character.attachment=20;
+  engine.dispatch({type:'EXIT_HOVERED',at:3000,value:'long'});
+  tick(1500);
+  expect(engine.state.messages.filter(message=>message.id==='H007')).toHaveLength(1);
+  engine.dispatch({type:'EXIT_HOVERED',at:4500,value:'long'});
+  tick(1500);
+  expect(engine.state.messages.filter(message=>message.id.startsWith('H'))).toHaveLength(1);
+ }
+});
+
+it('acknowledges a hover after typing only if the pointer is still there',()=>{
+ for(const leaves of [false,true]){
+  const {engine,tick}=harness();
+  engine.dispatch({type:'EXIT_HOVERED',at:1000,value:'long'});
+  if(leaves)engine.dispatch({type:'EXIT_HOVER_LEFT',at:1100});
+  tick(3000);
+  expect(engine.state.messages.map(message=>message.id)).toEqual(leaves?['C001.open']:['C001.open','H007']);
+ }
+});
 it('gives the player a full dot round after accepting, even after reading for a while',()=>{
  const {engine,tick}=harness();
  engine.debugBeat('C026');

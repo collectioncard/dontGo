@@ -15,7 +15,7 @@ test('actual mouse dwell triggers a contextual reaction and keeps the exit fixed
  await page.evaluate(()=>{
    const engine=(window as Window&{__dontGoEngine:Engine}).__dontGoEngine;
    engine.debugFamily('room');
-   engine.debugSeed(1800);
+   engine.debugSeed(123);
  });
  await expect(page.getByText("I made a lamp. It doesn't illuminate anything yet.")).toBeVisible();
  const end=page.getByRole('button',{name:'End Conversation',exact:true});
