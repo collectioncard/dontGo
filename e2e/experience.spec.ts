@@ -100,6 +100,34 @@ test('a click at the original exit position works during relocation',async({page
  await expect(page.getByText('SESSION TERMINATED')).toBeVisible();
 });
 
+test('the hidden-button preview keeps an exit available and restores the button after one to five minutes',async({page})=>{
+ await page.clock.install();
+ await page.goto('/');
+ const preview=async()=>{
+   await page.getByRole('button',{name:'AUDIT STATES',exact:true}).click();
+   await page.getByRole('button',{name:'Hide End Conversation',exact:true}).click();
+ };
+ await preview();
+ await expect(page.getByText("I'll give that back to you later.",{exact:true})).toBeVisible();
+ const storyButton=page.getByRole('button',{name:'End Conversation',exact:true});
+ const fallback=page.getByRole('button',{name:'End session',exact:true});
+ await expect(storyButton).toBeHidden();
+ await expect(fallback).toBeInViewport();
+ const remaining=await page.evaluate(()=>{
+   const engine=(window as Window&{__dontGoEngine:Engine}).__dontGoEngine;
+   return engine.state.exitHiddenUntil!-Date.now();
+ });
+ expect(remaining).toBeGreaterThanOrEqual(59000);
+ expect(remaining).toBeLessThanOrEqual(300000);
+ await page.clock.fastForward(remaining+100);
+ await expect(storyButton).toBeVisible();
+ await expect(fallback).toHaveCount(0);
+ await preview();
+ await fallback.focus();
+ await fallback.press('Enter');
+ await expect(page.getByText('SESSION TERMINATED')).toBeVisible();
+});
+
 test('the audit shortcut previews a repeating plea until the player ends the session',async({page})=>{
  await page.goto('/');
  await page.getByRole('button',{name:'AUDIT STATES',exact:true}).click();

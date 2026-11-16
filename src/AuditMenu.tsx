@@ -18,6 +18,7 @@ export function AuditMenu({engine:passed}:Props){
    <strong>QUICK STATE AUDIT</strong>
    <small>Jump directly to an authored state.</small>
    <div className="audit-group"><label>Desperation scene</label><button onClick={()=>jump(()=>engine.debugPlea())}>Please don’t go</button></div>
+   <div className="audit-group"><label>Exit preview</label><button disabled={engine.state.exitHiddenUntil!==null} onClick={()=>jump(()=>engine.debugHideExit())}>Hide End Conversation</button></div>
    <div className="audit-group"><label>Stages</label>{stages.map(s=><button key={s} onClick={()=>jump(()=>engine.debugStage(s))}>{s}</button>)}</div>
    <div className="audit-group"><label>Families</label>{families.map(f=><button key={f} onClick={()=>jump(()=>engine.debugFamily(f))}>{f}</button>)}</div>
    <div className="audit-group"><label>Projects</label>{families.map(f=><div className="audit-row" key={f}>{projects.filter(p=>f!=='nature'||p!=='more').map(p=><button key={f+p} onClick={()=>jump(()=>engine.debugProject(f,p==='project'?false:p==='alternate'?true:p))}>{f} {p}</button>)}</div>)}</div>

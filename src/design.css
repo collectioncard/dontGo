@@ -430,6 +430,10 @@ body:has(.terminal) .audit-menu { display: none; }
   animation-duration: var(--exit-flight-duration) !important;
 }
 @keyframes exit-origin-expires { to { visibility: hidden; } }
+.app[data-exit-hidden="true"] .end:not(.end-fallback) {
+  visibility: hidden;
+  pointer-events: none;
+}
 
 @media (max-width: 760px) {
   .app:not(.era-legacy) { padding: 34px 8px 65px; }
