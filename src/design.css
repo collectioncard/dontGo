@@ -399,6 +399,16 @@
 .terminal small { color: #a3afa0; }
 body:has(.terminal) .audit-menu { display: none; }
 
+.end.end-shifted {
+  translate: -28px 0;
+  transition: translate 180ms ease-out;
+}
+.end.end-shifted::after {
+  content: '';
+  position: absolute;
+  inset: -1px -29px -1px -1px;
+}
+
 @media (max-width: 760px) {
   .app:not(.era-legacy) { padding: 34px 8px 65px; }
   .app:not(.era-legacy) .site-header { height: 56px; }

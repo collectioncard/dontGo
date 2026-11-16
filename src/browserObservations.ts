@@ -56,6 +56,7 @@ export function observeBrowser(engine:Engine, getExit:()=>HTMLButtonElement|null
     if(!inside){leaveHover();return}
     hovered=true;
     engine.cancelExitFlinch();
+    if(!engine.state.exitShifted)engine.dispatch({type:'EXIT_HOVER_ENTERED',at:now});
     hoverTimer=window.setTimeout(()=>{
       reportedHover=true;
       engine.dispatch({type:'EXIT_HOVERED',at:Date.now(),value:'long'});

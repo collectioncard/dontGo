@@ -10,7 +10,7 @@ export const reactions:Reaction[]=[
  {id:'E004',event:'POINTER_NEAR_EXIT',intent:'exit',weight:.6,cooldown:120000,when:s=>s.stage==='desperate'&&s.pond,lines:["The pond's finally working.",'I just got the water right.']},
  {id:'E005',event:'POINTER_NEAR_EXIT',intent:'exit',weight:.6,cooldown:120000,when:s=>s.stage==='desperate'&&s.family==='room',lines:['I was going to leave the lamp on.','Did I make it too quiet in here?']},
  {id:'E006',event:'POINTER_NEAR_EXIT',intent:'exit',weight:.6,cooldown:120000,when:s=>s.stage==='desperate'&&s.family==='space',lines:['I was wondering how much more sky I could fit.',"I know. It's only a background."]},
- {id:'E013',event:'POINTER_NEAR_EXIT',intent:'exit',weight:.06,cooldown:120000,when:(s,e)=>s.stage==='desperate'&&s.exitEpisodes>=2&&!s.exitMoved&&e.value==='approach',lines:["Sorry. I shouldn't have done that.","That was rude. I won't do it again."]},
+ {id:'E013',event:'POINTER_NEAR_EXIT',intent:'exit',weight:.06,cooldown:120000,when:(s,e)=>s.stage==='desperate'&&s.exitEpisodes>=2&&!s.exitMoved&&!s.exitShifted&&e.value==='approach',lines:["Sorry. I shouldn't have done that.","That was rude. I won't do it again."]},
  {id:'H003',event:'EXIT_HOVERED',intent:'exit',weight:.7,cooldown:150000,when:s=>(s.preferences.minimal||0)>=2,lines:["I won't argue with a button.","It's your decision."]},
  {id:'H007',event:'EXIT_HOVERED',intent:'exit',weight:.4,cooldown:150000,when:(_s,e)=>e.value==='long',lines:['All right.','Understood.']},
  {id:'H008',event:'EXIT_HOVERED',intent:'exit',weight:.5,cooldown:150000,when:s=>s.family==='desktop',lines:['The little program will close with everything else.','Nothing on this desktop is more important than your choice.']},

@@ -69,29 +69,33 @@ const inspectBrowser=async(page:import('@playwright/test').Page)=>page.evaluate(
  };
 });
 
-test('actual mouse dwell triggers a contextual reaction and keeps the exit fixed',async({page})=>{
+test('first mouse hover moves End Conversation once and keeps its original spot clickable',async({page})=>{
  await page.goto('/');
  await expect(page.getByRole('button',{name:'Okay.',exact:true})).toBeVisible();
- await page.evaluate(()=>{
-   const engine=(window as Window&{__dontGoEngine:Engine}).__dontGoEngine;
-   engine.debugFamily('room');
-   engine.debugSeed(123);
- });
- await expect(page.getByText("I made a lamp. It doesn't illuminate anything yet.")).toBeVisible();
  const end=page.getByRole('button',{name:'End Conversation',exact:true});
- const before=await end.boundingBox();
+ const before=(await end.boundingBox())!;
  await end.hover();
+ const line=page.getByText("I'll move that so you don't accidentally do that again.",{exact:true});
+ await expect(line).toBeVisible();
+ await expect.poll(async()=>Math.round((await end.boundingBox())!.x-before.x)).toBe(-28);
  await page.mouse.move(20,20);
- await page.waitForTimeout(1000);
- expect((await inspectBrowser(page)).observations).toEqual([]);
  await end.hover();
- await expect.poll(async()=> (await inspectBrowser(page)).observations.map(event=>event.type)).toEqual(['POINTER_NEAR_EXIT','EXIT_HOVERED']);
- await expect.poll(async()=> (await inspectBrowser(page)).lines).toContain('H007');
- expect(await end.boundingBox()).toEqual(before);
- await end.click();
+ await expect(line).toHaveCount(1);
+ await page.mouse.click(before.x+before.width-3,before.y+before.height/2);
  await expect(page.getByText('SESSION TERMINATED')).toBeVisible();
 });
 
+test('the audit shortcut previews a repeating plea until the player ends the session',async({page})=>{
+ await page.goto('/');
+ await page.getByRole('button',{name:'AUDIT STATES',exact:true}).click();
+ await page.getByRole('button',{name:'Please don’t go',exact:true}).click();
+ await expect(page.getByText("Never leave. Please don't go.",{exact:true})).toBeVisible();
+ await expect(page.getByText("Please don't go.",{exact:true})).toHaveCount(2);
+ const end=page.getByRole('button',{name:'End Conversation',exact:true});
+ await end.focus();
+ await end.press('Enter');
+ await expect(page.getByText('SESSION TERMINATED')).toBeVisible();
+});
 test('actual resizing ignores jitter, includes height changes, and acknowledges a settled resize',async({page})=>{
  await page.setViewportSize({width:1100,height:800});
  await page.goto('/');
