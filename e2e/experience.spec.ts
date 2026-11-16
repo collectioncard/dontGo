@@ -1,6 +1,33 @@
 import {test,expect} from '@playwright/test';
 import type {Engine} from '../src/engine';
 
+test('the workplace beat opens a second movable window and lets the player restore it',async({page})=>{
+ await page.goto('/');
+ await page.getByRole('button',{name:'AUDIT STATES',exact:true}).click();
+ await page.getByRole('button',{name:'desktop',exact:true}).click();
+ await page.getByRole('button',{name:"That's great.",exact:true}).click();
+ await expect(page.getByRole('region',{name:'tools window',exact:true})).toHaveCount(0);
+ await page.getByRole('button',{name:"I'll move it.",exact:true}).click();
+ await expect(page.getByText('Two windows. Suddenly it looks like a workplace.')).toBeVisible();
+
+ const main=page.getByRole('region',{name:'little window',exact:true});
+ const tools=page.getByRole('region',{name:'tools window',exact:true});
+ await expect(main).toBeVisible();
+ await expect(tools).toBeVisible();
+ const handle=tools.getByRole('button',{name:'Move tools window with arrow keys'});
+ const initial=await tools.getAttribute('style');
+ await handle.press('ArrowLeft');
+ await expect(tools).not.toHaveAttribute('style',initial!);
+ await page.getByRole('button',{name:'Organize them.',exact:true}).click();
+ await expect(tools).toHaveAttribute('style',initial!);
+
+ await page.getByRole('button',{name:'Let it stay hidden.',exact:true}).click();
+ await expect(tools).toHaveCount(0);
+ await page.getByRole('button',{name:'Tools window',exact:true}).click();
+ await expect(tools).toBeVisible();
+ await expect(main).toBeVisible();
+});
+
 const inspectBrowser=async(page:import('@playwright/test').Page)=>page.evaluate(()=>{
  const engine=(window as Window&{__dontGoEngine:Engine}).__dontGoEngine;
  return {

@@ -35,6 +35,7 @@ for (const item of catalog) {
   if (!scenes[item.id]) scenes[item.id] = { id: item.id, line: item.line, choices: item.choices };
 }
 scenes.R008.line="I kept the rain. You seemed to like it.";
+scenes.D005.line="I think this is finally useful. It took an unnecessary window or two to get here.";
 export type Family = 'nature'|'space'|'room'|'desktop';
 export const familyArcs: Record<Family, string[]> = {
   nature: ['N001','N002','N003','N004','N005','N006','N007','N008','N009','N010'],

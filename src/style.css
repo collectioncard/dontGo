@@ -73,3 +73,13 @@
 @keyframes dot-rebound{0%,100%{transform:translate(0,0)}32%{transform:translate(30px,-40px)}57%{transform:translate(58px,0)}78%{transform:translate(30px,-18px)}}
 @keyframes dot-crossing{from{left:5%}to{left:86%}}
 @media(prefers-reduced-motion:reduce){.catch-game button[aria-label],.catch-habitat span,.moving-dot.dot-target,.cue-lamp-flicker .lamp-shade{animation:none}}
+.desktop-scene .toy-window{
+  --toy-width:clamp(0px,max(45%,148px),calc(100% - 16px));
+  width:var(--toy-width);min-width:0;
+  left:clamp(8px,var(--window-x),calc(100% - var(--toy-width) - 8px));
+  top:clamp(8px,var(--window-y),calc(100% - 220px));
+}
+.desktop-scene .toy-window-front{z-index:4}
+.desktop-taskbar{position:absolute;z-index:5;bottom:13%;left:8%;right:8%;display:flex;flex-wrap:wrap;gap:5px}
+.desktop-taskbar button{border:2px outset #e8efdf;background:#dbe6d9;color:#34574c;padding:4px 8px;font:11px Arial,sans-serif}
+.desktop-wallpaper{background:repeating-linear-gradient(135deg,#9ab4aa 0 10px,#b6c9ba 10px 20px)}
