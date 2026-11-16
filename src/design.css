@@ -118,7 +118,7 @@
 }
 .app:not(.era-legacy) .chat {
   padding: clamp(20px, 3.2vw, 46px) clamp(18px, 3.4vw, 48px) 26px;
-  background: var(--paper);
+  background-color: var(--paper);
 }
 .app:not(.era-legacy) .chat-heading h2 {
   color: var(--ink);
@@ -235,6 +235,8 @@
 .app.era-web2 .world-empty::before { background: radial-gradient(ellipse at 18% 9%, #e3f1ff, transparent 65%); }
 .app.era-web2 .world-empty::after { border-color: #5780ad; }
 .app.experiment-C013:not(.era-legacy) .brand h1 { font-family: cursive; }
+.app.experiment-C015:not(.era-legacy) .message { margin-bottom: 32px; }
+.app.experiment-C019:not(.era-legacy) :is(.site-header,.header-status) { color: #293e31; }
 .app.era-web2 .world-caption h2 { font-family: Arial, sans-serif !important; font-weight: 700 !important; }
 .app.makeover-font .brand h1 { font-family: Arial, sans-serif; }
 .app.makeover-panels:not(.era-legacy) .chat { background: #edf1df; }
