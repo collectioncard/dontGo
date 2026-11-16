@@ -1,6 +1,39 @@
 import {test,expect} from '@playwright/test';
 import type {Engine} from '../src/engine';
 
+test('world transitions restyle the whole page and preserve the conversation',async({page})=>{
+ await page.setViewportSize({width:1200,height:900});
+ await page.goto('/');
+ const opening='Hello. This page can hold a conversation. There are some limitations.';
+ await expect(page.getByRole('log')).toContainText(opening);
+ const jump=async(beat:string)=>{
+   await page.getByRole('button',{name:'AUDIT STATES',exact:true}).click();
+   await page.getByLabel('Beat id').fill(beat);
+   await page.getByRole('button',{name:'Jump',exact:true}).click();
+ };
+ const scene=page.getByRole('complementary',{name:'Interactive space'});
+ const chat=page.getByRole('region',{name:'Conversation',exact:true});
+
+ await jump('N008');
+ await expect(page.getByRole('heading',{name:'Pond journal'})).toBeVisible();
+ expect((await scene.boundingBox())!.x).toBeLessThan((await chat.boundingBox())!.x);
+ await page.getByRole('button',{name:'Touch the pond'}).click();
+ await jump('S007');
+ await expect(page.getByRole('heading',{name:'Signal log'})).toBeVisible();
+ expect((await scene.boundingBox())!.x).toBeGreaterThan((await chat.boundingBox())!.x);
+ await jump('R009');
+ await expect(page.getByRole('heading',{name:'The reading room'})).toBeVisible();
+ expect((await scene.boundingBox())!.y).toBeLessThan((await chat.boundingBox())!.y);
+
+ await page.setViewportSize({width:375,height:812});
+ await jump('D003');
+ await expect(page.getByRole('heading',{name:'Conversation.log'})).toBeVisible();
+ await expect(page.getByRole('region',{name:'tools window'})).toBeVisible();
+ expect((await scene.boundingBox())!.width).toBeGreaterThan(300);
+ await expect(page.getByRole('log')).toContainText(opening);
+ await expect(page.getByRole('button',{name:'End Conversation',exact:true})).toBeInViewport();
+});
+
 test('the workplace beat opens a second movable window and lets the player restore it',async({page})=>{
  await page.goto('/');
  await page.getByRole('button',{name:'AUDIT STATES',exact:true}).click();
