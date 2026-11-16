@@ -141,7 +141,7 @@ export class Engine {
       this.startFamilyBeat('D005');
       return;
     }
-    if(id==='N003')this.state.rain=true;
+    if(id==='N003'||id==='N004')this.state.rain=true;
     if(id==='R006')this.state.roomWindowIntroduced=true;
     if(id==='R011')this.state.roomShelfIntroduced=true;
     if(id==='D001')this.state.desktopWindowIntroduced=true;

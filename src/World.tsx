@@ -122,7 +122,8 @@ function Nature({state,event}:{state:State;event:(value:string)=>void}){const [p
  {state.turtle&&<span className="turtle-stone" aria-hidden="true"/>}{state.pond&&<button className="pond" aria-label="Touch the pond" onClick={()=>{event('pond');setRipple(ripple+1)}}>{state.crossFeature==='pond-night'&&<span className="pond-stars">✦ · ✧ · ✦</span>}<span key={ripple} className="ripple"/></button>}
  {state.turtle&&<button className={`turtle ${state.reactionCue==='turtle-arrive'?'turtle-arrive':''}`} style={{left:`${pos.x}%`,top:`${pos.y}%`}} aria-label="Move the turtle" onPointerDown={e=>{dragging.current=true;e.currentTarget.setPointerCapture(e.pointerId)}} onClick={()=>event('turtle')} onKeyDown={e=>{const d:Record<string,[number,number]>={ArrowLeft:[-4,0],ArrowRight:[4,0],ArrowUp:[0,-4],ArrowDown:[0,4]};if(d[e.key]){e.preventDefault();setPos(p=>({x:Math.max(4,Math.min(92,p.x+d[e.key][0])),y:Math.max(5,Math.min(85,p.y+d[e.key][1]))}));event('turtle-drag')}}}>{state.crossFeature==='astronaut'&&<span className="turtle-helmet"/>}{state.astronautFlag&&state.crossFeature==='astronaut'&&<span className="astronaut-flag">⚑</span>}<span className="turtle-head"/><span className="turtle-shell"><i/></span><span className="turtle-feet">••</span></button>}
  {state.turtleFriend&&<div className="turtle-friend" aria-label="A second turtle">🐢</div>}
- {state.rain&&[0,1,2,3,4,5].map(i=><span className="rain-turtle" key={i} style={{left:`${10+i*15}%`,animationDelay:`${i*.4}s`}}>🐢</span>)}
+ {state.rain&&Array.from({length:state.beat==='N003'?1:6},(_,i)=>
+   <span className="rain-turtle" key={i} style={{left:`${state.beat==='N003'?50:10+i*15}%`,animationDelay:`${i*.4}s`}}>🐢</span>)}
  </div>}
 
 function DotToy({state,event}:{state:State;event:(value:string)=>void}){

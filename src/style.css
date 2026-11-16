@@ -83,3 +83,6 @@
 .desktop-taskbar{position:absolute;z-index:5;bottom:13%;left:8%;right:8%;display:flex;flex-wrap:wrap;gap:5px}
 .desktop-taskbar button{border:2px outset #e8efdf;background:#dbe6d9;color:#34574c;padding:4px 8px;font:11px Arial,sans-serif}
 .desktop-wallpaper{background:repeating-linear-gradient(135deg,#9ab4aa 0 10px,#b6c9ba 10px 20px)}
+.rain-turtle{top:auto;bottom:20%;animation:turtle-landing 3.2s cubic-bezier(.35,0,.7,1) both}
+@keyframes turtle-landing{0%{transform:translateY(-460px)}70%{transform:translateY(0)}82%{transform:translateY(-18px)}100%{transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){.rain-turtle{animation:none}}
