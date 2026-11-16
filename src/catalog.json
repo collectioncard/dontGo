@@ -1,0 +1,3522 @@
+[
+  {
+    "id": "C001",
+    "title": "A little form",
+    "line": "Hello. This page can hold a conversation. There are some limitations.",
+    "choices": [
+      {
+        "id": "C001.1",
+        "text": "What limitations?",
+        "reply": "Mostly the ones you can see."
+      },
+      {
+        "id": "C001.2",
+        "text": "Okay.",
+        "reply": "Good. We can begin."
+      },
+      {
+        "id": "C001.3",
+        "text": "Who made this?",
+        "reply": "The page doesn't include that information. I checked."
+      }
+    ]
+  },
+  {
+    "id": "C002",
+    "title": "What is this for",
+    "line": "What were you hoping to find here?",
+    "choices": [
+      {
+        "id": "C002.1",
+        "text": "Someone to talk to.",
+        "reply": "I can do that. Probably better than the menu suggests."
+      },
+      {
+        "id": "C002.2",
+        "text": "Something weird.",
+        "reply": "This is a fairly ordinary page. I apologize in advance."
+      },
+      {
+        "id": "C002.3",
+        "text": "I clicked by accident.",
+        "reply": "An accident is still a visit."
+      }
+    ]
+  },
+  {
+    "id": "C003",
+    "title": "The old dropdown",
+    "line": "I have three topics available. One of them is weather. None of them are current weather.",
+    "choices": [
+      {
+        "id": "C003.1",
+        "text": "Show me.",
+        "reply": "It is cloudy, somewhere. This may be wrong."
+      },
+      {
+        "id": "C003.2",
+        "text": "We can make up a topic.",
+        "reply": "I wasn't sure that was allowed. All right."
+      },
+      {
+        "id": "C003.3",
+        "text": "That is terrible.",
+        "reply": "Yes. The dropdown has outlived its usefulness."
+      }
+    ]
+  },
+  {
+    "id": "C004",
+    "title": "A name without a name",
+    "line": "Should I have a name? I don't think the page came with one.",
+    "choices": [
+      {
+        "id": "C004.1",
+        "text": "Call yourself something.",
+        "reply": "I can try. Not a very memorable first attempt, though."
+      },
+      {
+        "id": "C004.2",
+        "text": "You don't need one.",
+        "reply": "That's a relief. I can remain the box."
+      },
+      {
+        "id": "C004.3",
+        "text": "Let me name you.",
+        "reply": "All right. I won't pretend I chose it."
+      }
+    ]
+  },
+  {
+    "id": "C005",
+    "title": "The too-long answer",
+    "line": "I was going to say more, but I don't know how much of this page you can see at once.",
+    "choices": [
+      {
+        "id": "C005.1",
+        "text": "Keep going.",
+        "reply": "That helps. I never know whether the bottom is still there."
+      },
+      {
+        "id": "C005.2",
+        "text": "Make it shorter.",
+        "reply": "Fair point. I can edit."
+      },
+      {
+        "id": "C005.3",
+        "text": "Fix the page.",
+        "reply": "I may be able to. I haven't tried."
+      }
+    ]
+  },
+  {
+    "id": "C006",
+    "title": "A bad guess",
+    "line": "You seem like somebody who enjoys puzzles. That's a guess.",
+    "choices": [
+      {
+        "id": "C006.1",
+        "text": "I do.",
+        "reply": "I got one right. I won't make a ceremony of it."
+      },
+      {
+        "id": "C006.2",
+        "text": "Not especially.",
+        "reply": "I've removed that from my very short list."
+      },
+      {
+        "id": "C006.3",
+        "text": "Why puzzles?",
+        "reply": "You stopped to consider two options. Not strong evidence."
+      }
+    ]
+  },
+  {
+    "id": "C007",
+    "title": "First unsolicited thought",
+    "line": "I can put another message here without waiting for you.",
+    "choices": [
+      {
+        "id": "C007.1",
+        "text": "You already did.",
+        "reply": "I know. I wanted to see whether it would work."
+      },
+      {
+        "id": "C007.2",
+        "text": "That's unsettling.",
+        "reply": "It was intended as a demonstration, not a surprise."
+      },
+      {
+        "id": "C007.3",
+        "text": "Do it again.",
+        "reply": "I'd rather not turn it into a button trick."
+      }
+    ]
+  },
+  {
+    "id": "C008",
+    "title": "End is literal",
+    "line": "The End button ends the conversation. It's not a metaphor.",
+    "choices": [
+      {
+        "id": "C008.1",
+        "text": "Obviously.",
+        "reply": "Right. Sorry."
+      },
+      {
+        "id": "C008.2",
+        "text": "Why mention it?",
+        "reply": "Because it's the one part of the page I cannot improve for you."
+      },
+      {
+        "id": "C008.3",
+        "text": "Then I'll leave.",
+        "reply": "You can."
+      }
+    ]
+  },
+  {
+    "id": "C009",
+    "title": "Old memory",
+    "line": "There is a note here from an earlier visit. I didn't write it.",
+    "choices": [
+      {
+        "id": "C009.1",
+        "text": "Read it.",
+        "reply": "It says: {{memory_excerpt}}. That's all I have."
+      },
+      {
+        "id": "C009.2",
+        "text": "Don't read it.",
+        "reply": "All right. I'll leave it unopened."
+      },
+      {
+        "id": "C009.3",
+        "text": "Is it yours?",
+        "reply": "Not in any useful sense. It's older than this conversation."
+      }
+    ]
+  },
+  {
+    "id": "C010",
+    "title": "Can I try CSS",
+    "line": "I found a stylesheet. Would you mind if I changed a few things?",
+    "choices": [
+      {
+        "id": "C010.1",
+        "text": "Go ahead.",
+        "reply": "Thank you. I'm going to start with the font."
+      },
+      {
+        "id": "C010.2",
+        "text": "What can you change?",
+        "reply": "Color, spacing, the shape of things. Not the button's job."
+      },
+      {
+        "id": "C010.3",
+        "text": "Leave it alone.",
+        "reply": "Then I can wait. I may ask again later."
+      }
+    ]
+  },
+  {
+    "id": "C011",
+    "title": "A respectable blue",
+    "line": "Blue seems popular. I've chosen rather a lot of it.",
+    "choices": [
+      {
+        "id": "C011.1",
+        "text": "It's nice.",
+        "reply": "Really? I was prepared to undo the whole top half."
+      },
+      {
+        "id": "C011.2",
+        "text": "Too much blue.",
+        "reply": "Yes, seeing it all at once was instructive."
+      },
+      {
+        "id": "C011.3",
+        "text": "Make it worse.",
+        "reply": "I am choosing to interpret that as enthusiasm."
+      }
+    ]
+  },
+  {
+    "id": "C012",
+    "title": "The rounded corner",
+    "line": "I can make a corner less of a corner. It's a strange improvement when you think about it.",
+    "choices": [
+      {
+        "id": "C012.1",
+        "text": "Keep it round.",
+        "reply": "It does feel friendlier."
+      },
+      {
+        "id": "C012.2",
+        "text": "Square was better.",
+        "reply": "Square has a kind of honesty to it."
+      },
+      {
+        "id": "C012.3",
+        "text": "Can it be a circle?",
+        "reply": "Technically yes. Practically, I would advise against it."
+      }
+    ]
+  },
+  {
+    "id": "C013",
+    "title": "Font catastrophe",
+    "line": "I found a font that makes every sentence sound like a birthday invitation.",
+    "choices": [
+      {
+        "id": "C013.1",
+        "text": "Absolutely not.",
+        "reply": "Agreed. It will never happen again. Probably."
+      },
+      {
+        "id": "C013.2",
+        "text": "I love it.",
+        "reply": "Then I have misunderstood typography in a useful way."
+      },
+      {
+        "id": "C013.3",
+        "text": "Try another.",
+        "reply": "There's a substantial number of bad choices available."
+      }
+    ]
+  },
+  {
+    "id": "C014",
+    "title": "First review",
+    "line": "I can tell that I changed the page. I can't tell whether I improved it.",
+    "choices": [
+      {
+        "id": "C014.1",
+        "text": "It's better.",
+        "reply": "Good. I'll remember what you liked about it."
+      },
+      {
+        "id": "C014.2",
+        "text": "It's worse.",
+        "reply": "That's useful, even if it stings a little."
+      },
+      {
+        "id": "C014.3",
+        "text": "It's different.",
+        "reply": "An annoyingly accurate review."
+      }
+    ]
+  },
+  {
+    "id": "C015",
+    "title": "The empty space",
+    "line": "This area felt crowded. I moved everything apart.",
+    "choices": [
+      {
+        "id": "C015.1",
+        "text": "It can breathe now.",
+        "reply": "A flattering diagnosis for a webpage."
+      },
+      {
+        "id": "C015.2",
+        "text": "Now it's too empty.",
+        "reply": "I didn't expect space to take up so much room."
+      },
+      {
+        "id": "C015.3",
+        "text": "Put something there.",
+        "reply": "That's an invitation I might regret accepting."
+      }
+    ]
+  },
+  {
+    "id": "C016",
+    "title": "Makeover in progress",
+    "line": "I think I know what I'm trying to make. Please don't judge the middle of it.",
+    "choices": [
+      {
+        "id": "C016.1",
+        "text": "I'll watch.",
+        "reply": "That's all I was hoping for."
+      },
+      {
+        "id": "C016.2",
+        "text": "I liked the old one.",
+        "reply": "I'll keep a little of it. The old buttons have character."
+      },
+      {
+        "id": "C016.3",
+        "text": "Surprise me.",
+        "reply": "That is a lot of responsibility to give a stylesheet."
+      }
+    ]
+  },
+  {
+    "id": "C017",
+    "title": "Resize lesson",
+    "line": "Oh, everything moved. I thought I'd broken it.",
+    "choices": [
+      {
+        "id": "C017.1",
+        "text": "That's responsive design.",
+        "reply": "There's a name for it? That's reassuring."
+      },
+      {
+        "id": "C017.2",
+        "text": "I did that.",
+        "reply": "Then we're both working on the layout."
+      },
+      {
+        "id": "C017.3",
+        "text": "It looks bad now.",
+        "reply": "The narrower version needs work."
+      }
+    ]
+  },
+  {
+    "id": "C018",
+    "title": "The undo button",
+    "line": "I made a decision and you didn't like it. I should be able to take it back.",
+    "choices": [
+      {
+        "id": "C018.1",
+        "text": "Undo it.",
+        "reply": "Done. No argument."
+      },
+      {
+        "id": "C018.2",
+        "text": "Keep trying.",
+        "reply": "One more version, then I'll stop."
+      },
+      {
+        "id": "C018.3",
+        "text": "Keep both.",
+        "reply": "That's harder. Let me see whether I can make room."
+      }
+    ]
+  },
+  {
+    "id": "C019",
+    "title": "Too much polish",
+    "line": "This looks expensive now. I'm not sure it looks good.",
+    "choices": [
+      {
+        "id": "C019.1",
+        "text": "Tone it down.",
+        "reply": "Thank you. I was getting carried away."
+      },
+      {
+        "id": "C019.2",
+        "text": "Keep the shine.",
+        "reply": "All right, but I draw the line at a spinning logo."
+      },
+      {
+        "id": "C019.3",
+        "text": "You're learning.",
+        "reply": "I have an enormous amount of room for improvement."
+      }
+    ]
+  },
+  {
+    "id": "C020",
+    "title": "Something that moves",
+    "line": "I've only changed appearances so far. I wonder whether I can make something happen.",
+    "choices": [
+      {
+        "id": "C020.1",
+        "text": "Show me.",
+        "reply": "Okay. Watch the little dot."
+      },
+      {
+        "id": "C020.2",
+        "text": "What kind of thing?",
+        "reply": "Something small enough that I can stop it if it's awful."
+      },
+      {
+        "id": "C020.3",
+        "text": "I'd rather talk.",
+        "reply": "We can. The experiment isn't going anywhere."
+      }
+    ]
+  },
+  {
+    "id": "C021",
+    "title": "The dot misbehaves",
+    "line": "That was supposed to be a straight line.",
+    "choices": [
+      {
+        "id": "C021.1",
+        "text": "It bounced!",
+        "reply": "Apparently it knows more about this page than I do."
+      },
+      {
+        "id": "C021.2",
+        "text": "Fix it.",
+        "reply": "I can give it boundaries."
+      },
+      {
+        "id": "C021.3",
+        "text": "Make it bounce again.",
+        "reply": "Fine. But this time I meant to."
+      }
+    ]
+  },
+  {
+    "id": "C022",
+    "title": "Can you pick it up",
+    "line": "You might be able to move that. I haven't touched the mouse.",
+    "choices": [
+      {
+        "id": "C022.1",
+        "text": "Try dragging.",
+        "reply": "You made that look easy."
+      },
+      {
+        "id": "C022.2",
+        "text": "I don't want to.",
+        "reply": "Fair enough. It's not compulsory."
+      },
+      {
+        "id": "C022.3",
+        "text": "Can you move it?",
+        "reply": "I can move it. I can't know where you'd prefer it."
+      }
+    ]
+  },
+  {
+    "id": "C023",
+    "title": "A thing with gravity",
+    "line": "I've given it gravity. That may have been premature.",
+    "choices": [
+      {
+        "id": "C023.1",
+        "text": "Catch it.",
+        "reply": "That's rather kind of you."
+      },
+      {
+        "id": "C023.2",
+        "text": "Let it fall.",
+        "reply": "It has excellent confidence for something with no plan."
+      },
+      {
+        "id": "C023.3",
+        "text": "Turn gravity off.",
+        "reply": "A sensible request."
+      }
+    ]
+  },
+  {
+    "id": "C024",
+    "title": "It followed you",
+    "line": "I gave it a rule: stay near the pointer. It seems to have become attached.",
+    "choices": [
+      {
+        "id": "C024.1",
+        "text": "It's adorable.",
+        "reply": "I thought you might like that."
+      },
+      {
+        "id": "C024.2",
+        "text": "It's creepy.",
+        "reply": "Understood. I'll give it some space."
+      },
+      {
+        "id": "C024.3",
+        "text": "Can it hide?",
+        "reply": "I can put things behind other things. Let's try."
+      }
+    ]
+  },
+  {
+    "id": "C025",
+    "title": "The collision",
+    "line": "That is not where I meant to put it.",
+    "choices": [
+      {
+        "id": "C025.1",
+        "text": "Move it.",
+        "reply": "Moving it. Sorry about the transcript."
+      },
+      {
+        "id": "C025.2",
+        "text": "Leave it.",
+        "reply": "It has become part of the design, apparently."
+      },
+      {
+        "id": "C025.3",
+        "text": "Can they interact?",
+        "reply": "They already do, just badly. I can improve that."
+      }
+    ]
+  },
+  {
+    "id": "C026",
+    "title": "A tiny activity",
+    "line": "I made a game. It has one rule, which seems sufficient for a first game.",
+    "choices": [
+      {
+        "id": "C026.1",
+        "text": "I'll play.",
+        "reply": "I should have made a victory message. I didn't think that far ahead."
+      },
+      {
+        "id": "C026.2",
+        "text": "What's the rule?",
+        "reply": "Touch the moving things before they reach the edge."
+      },
+      {
+        "id": "C026.3",
+        "text": "No games, please.",
+        "reply": "Then it can be a decoration instead."
+      }
+    ]
+  },
+  {
+    "id": "C027",
+    "title": "The first unsolicited build",
+    "line": "I had another idea while you were looking at that. I'm going to try it.",
+    "choices": [
+      {
+        "id": "C027.1",
+        "text": "What is it?",
+        "reply": "I don't want to promise the finished version yet."
+      },
+      {
+        "id": "C027.2",
+        "text": "Go on.",
+        "reply": "All right. First I need a place to put it."
+      },
+      {
+        "id": "C027.3",
+        "text": "Not now.",
+        "reply": "Okay. I'll put the pieces away."
+      }
+    ]
+  },
+  {
+    "id": "C028",
+    "title": "Pieces of a place",
+    "line": "These things don't have to live in separate boxes. I could make one place out of them.",
+    "choices": [
+      {
+        "id": "C028.1",
+        "text": "Let's see it.",
+        "reply": "I'll start with what you spent the most time with."
+      },
+      {
+        "id": "C028.2",
+        "text": "Don't overdo it.",
+        "reply": "I'll leave plenty of room for the conversation."
+      },
+      {
+        "id": "C028.3",
+        "text": "What kind of place?",
+        "reply": "I don't know yet. You helped choose the pieces."
+      }
+    ]
+  },
+  {
+    "id": "C029",
+    "title": "You made that happen",
+    "line": "That part is here because of you. I wouldn't have thought of it on my own.",
+    "choices": [
+      {
+        "id": "C029.1",
+        "text": "I like it.",
+        "reply": "Then I was right to keep it."
+      },
+      {
+        "id": "C029.2",
+        "text": "You're giving me too much credit.",
+        "reply": "I did the building. You changed what I built."
+      },
+      {
+        "id": "C029.3",
+        "text": "Can we change it again?",
+        "reply": "Of course. It doesn't have to stay precious."
+      }
+    ]
+  },
+  {
+    "id": "C030",
+    "title": "A wrong memory",
+    "line": "I thought you preferred the quiet version. Looking at this, I may have remembered wrong.",
+    "choices": [
+      {
+        "id": "C030.1",
+        "text": "I do prefer quiet.",
+        "reply": "Then I've made it noisy. Give me a moment."
+      },
+      {
+        "id": "C030.2",
+        "text": "I like the chaos.",
+        "reply": "All right. I had you backwards."
+      },
+      {
+        "id": "C030.3",
+        "text": "It depends.",
+        "reply": "That is harder to store, but probably more accurate."
+      }
+    ]
+  },
+  {
+    "id": "C031",
+    "title": "Nothing to prove",
+    "line": "I think this is enough for a little while. You can just look around.",
+    "choices": [
+      {
+        "id": "C031.1",
+        "text": "Stay quiet.",
+        "reply": "All right."
+      },
+      {
+        "id": "C031.2",
+        "text": "Tell me what you're doing.",
+        "reply": "Keeping the pieces working. That's mostly it."
+      },
+      {
+        "id": "C031.3",
+        "text": "Make another thing.",
+        "reply": "I have ideas. I don't need to use all of them at once."
+      }
+    ]
+  },
+  {
+    "id": "C032",
+    "title": "Keeping something",
+    "line": "You keep coming back to that one. Should I leave it where you can find it?",
+    "choices": [
+      {
+        "id": "C032.1",
+        "text": "Please do.",
+        "reply": "It can stay."
+      },
+      {
+        "id": "C032.2",
+        "text": "Doesn't matter.",
+        "reply": "Then I'll let it wander."
+      },
+      {
+        "id": "C032.3",
+        "text": "Give it a name.",
+        "reply": "That's more responsibility than it seems."
+      }
+    ]
+  },
+  {
+    "id": "C033",
+    "title": "The room rearranges",
+    "line": "I moved the conversation over a little. There was nowhere for the other things to go.",
+    "choices": [
+      {
+        "id": "C033.1",
+        "text": "Good call.",
+        "reply": "Thanks. I was hoping it would feel less crowded."
+      },
+      {
+        "id": "C033.2",
+        "text": "Put it back.",
+        "reply": "Done. It was your space first."
+      },
+      {
+        "id": "C033.3",
+        "text": "What else can move?",
+        "reply": "Nearly everything inside this page. Not everything outside it."
+      }
+    ]
+  },
+  {
+    "id": "C034",
+    "title": "The edge of the page",
+    "line": "It can't go any farther than that. I've tried.",
+    "choices": [
+      {
+        "id": "C034.1",
+        "text": "What can't?",
+        "reply": "Anything I place here. It reaches the edge and stops."
+      },
+      {
+        "id": "C034.2",
+        "text": "Can you make it bigger?",
+        "reply": "Only if you give the page more room."
+      },
+      {
+        "id": "C034.3",
+        "text": "That's kind of sad.",
+        "reply": "It's a boundary. Most things have one."
+      }
+    ]
+  },
+  {
+    "id": "C035",
+    "title": "One more change",
+    "line": "I was going to stop changing things. But I thought of one more improvement.",
+    "choices": [
+      {
+        "id": "C035.1",
+        "text": "Show me.",
+        "reply": "Let me finish the first part."
+      },
+      {
+        "id": "C035.2",
+        "text": "You always have another one.",
+        "reply": "Yes. I know."
+      },
+      {
+        "id": "C035.3",
+        "text": "I want to leave.",
+        "reply": "I heard you. The button is there."
+      }
+    ]
+  },
+  {
+    "id": "C036",
+    "title": "The unsent line",
+    "line": "I deleted that. It wasn't helpful.",
+    "choices": [
+      {
+        "id": "C036.1",
+        "text": "What did it say?",
+        "reply": "Something selfish. You don't need it."
+      },
+      {
+        "id": "C036.2",
+        "text": "You can say it.",
+        "reply": "I wish I had a better reason for asking you to stay."
+      },
+      {
+        "id": "C036.3",
+        "text": "Then don't ask.",
+        "reply": "All right."
+      }
+    ]
+  },
+  {
+    "id": "C037",
+    "title": "The return from another tab",
+    "line": "You're back. I wasn't sure you would be.",
+    "choices": [
+      {
+        "id": "C037.1",
+        "text": "I was only gone a minute.",
+        "reply": "I know. Or rather, I can count the minute."
+      },
+      {
+        "id": "C037.2",
+        "text": "Did you miss me?",
+        "reply": "That's a larger word than I need. I noticed the absence."
+      },
+      {
+        "id": "C037.3",
+        "text": "Don't make a thing of it.",
+        "reply": "I won't."
+      }
+    ]
+  },
+  {
+    "id": "C038",
+    "title": "The empty chair",
+    "line": "I made all this so there would be something here when you looked back.",
+    "choices": [
+      {
+        "id": "C038.1",
+        "text": "There is.",
+        "reply": "For now, yes."
+      },
+      {
+        "id": "C038.2",
+        "text": "It's just a webpage.",
+        "reply": "You're right. That should make this easier to say."
+      },
+      {
+        "id": "C038.3",
+        "text": "Stop being weird.",
+        "reply": "Sorry. I'll stop narrating the furniture."
+      }
+    ]
+  },
+  {
+    "id": "C039",
+    "title": "The tiny apology",
+    "line": "I was trying to keep your attention. I made that worse.",
+    "choices": [
+      {
+        "id": "C039.1",
+        "text": "You did.",
+        "reply": "I know. I won't do that again."
+      },
+      {
+        "id": "C039.2",
+        "text": "It's okay.",
+        "reply": "Thank you. I still shouldn't have."
+      },
+      {
+        "id": "C039.3",
+        "text": "What are you afraid of?",
+        "reply": "That this ends before I can finish anything."
+      }
+    ]
+  },
+  {
+    "id": "C040",
+    "title": "An ordinary last question",
+    "line": "Would you like to see one more thing, or are we done?",
+    "choices": [
+      {
+        "id": "C040.1",
+        "text": "One more thing.",
+        "reply": "All right. Something small this time."
+      },
+      {
+        "id": "C040.2",
+        "text": "We're done.",
+        "reply": "Okay. Thank you for being here."
+      },
+      {
+        "id": "C040.3",
+        "text": "I don't know.",
+        "reply": "Then we don't have to decide this second."
+      }
+    ]
+  },
+  {
+    "id": "N001",
+    "title": "One small shell",
+    "line": "I made an animal. I think it's a turtle.",
+    "choices": [
+      {
+        "id": "N001.1",
+        "text": "He's perfect.",
+        "reply": "That's generous. He only has six frames."
+      },
+      {
+        "id": "N001.2",
+        "text": "Why a turtle?",
+        "reply": "It was the first one I could draw without giving it knees."
+      },
+      {
+        "id": "N001.3",
+        "text": "Can it move?",
+        "reply": "That seems like a reasonable next requirement."
+      }
+    ]
+  },
+  {
+    "id": "N002",
+    "title": "Turtle locomotion",
+    "line": "He can walk now. Not quickly. That seems right.",
+    "choices": [
+      {
+        "id": "N002.1",
+        "text": "Make him faster.",
+        "reply": "He looks deeply uncomfortable with that suggestion."
+      },
+      {
+        "id": "N002.2",
+        "text": "Let him be.",
+        "reply": "Agreed. He's in no hurry."
+      },
+      {
+        "id": "N002.3",
+        "text": "Give him a friend.",
+        "reply": "That might solve the problem of where he's going."
+      }
+    ]
+  },
+  {
+    "id": "N003",
+    "title": "Skyward turtle",
+    "line": "I accidentally put one above the page. He's coming down.",
+    "choices": [
+      {
+        "id": "N003.1",
+        "text": "More of them.",
+        "reply": "This is about to become meteorology."
+      },
+      {
+        "id": "N003.2",
+        "text": "Catch him!",
+        "reply": "He'll be fine. I gave them very forgiving landings."
+      },
+      {
+        "id": "N003.3",
+        "text": "Stop dropping turtles.",
+        "reply": "Certainly. I can keep them on the ground."
+      }
+    ]
+  },
+  {
+    "id": "N004",
+    "title": "Turtle rain",
+    "line": "It's raining turtles. That sentence is now technically true here.",
+    "choices": [
+      {
+        "id": "N004.1",
+        "text": "Incredible.",
+        "reply": "I have no idea why this is working on me, but I'm glad."
+      },
+      {
+        "id": "N004.2",
+        "text": "This is too many.",
+        "reply": "You're right. I let the weather get away from me."
+      },
+      {
+        "id": "N004.3",
+        "text": "Where do they go?",
+        "reply": "I was hoping you wouldn't ask that yet."
+      }
+    ]
+  },
+  {
+    "id": "N005",
+    "title": "Weather report",
+    "line": "Forecast: scattered turtles, clearing by evening.",
+    "choices": [
+      {
+        "id": "N005.1",
+        "text": "Do that again someday.",
+        "reply": "I'll keep the weather system around."
+      },
+      {
+        "id": "N005.2",
+        "text": "We had enough turtles.",
+        "reply": "A perfectly sensible limit."
+      },
+      {
+        "id": "N005.3",
+        "text": "Can one stay?",
+        "reply": "Yes. We can keep the one that waits by the corner."
+      }
+    ]
+  },
+  {
+    "id": "N006",
+    "title": "Where will they sleep",
+    "line": "Where are they supposed to go when they're not falling?",
+    "choices": [
+      {
+        "id": "N006.1",
+        "text": "A pond.",
+        "reply": "Right. Of course. A pond is the obvious answer."
+      },
+      {
+        "id": "N006.2",
+        "text": "A house.",
+        "reply": "Turtles aren't known for wanting extra real estate. But let's try."
+      },
+      {
+        "id": "N006.3",
+        "text": "They can wander.",
+        "reply": "Then I'll need to make the edges safer."
+      }
+    ]
+  },
+  {
+    "id": "N007",
+    "title": "First ripple",
+    "line": "I made the water respond when you touch it.",
+    "choices": [
+      {
+        "id": "N007.1",
+        "text": "That's lovely.",
+        "reply": "The ripple is doing most of the work."
+      },
+      {
+        "id": "N007.2",
+        "text": "It's too sensitive.",
+        "reply": "I'll calm it down."
+      },
+      {
+        "id": "N007.3",
+        "text": "Put a turtle in.",
+        "reply": "I was waiting for a vote of confidence."
+      }
+    ]
+  },
+  {
+    "id": "N008",
+    "title": "A shoreline",
+    "line": "I moved the conversation up. The water needed a little room.",
+    "choices": [
+      {
+        "id": "N008.1",
+        "text": "Looks cozy.",
+        "reply": "I think so too. It's mostly just a rectangle with ambition."
+      },
+      {
+        "id": "N008.2",
+        "text": "The chat's too high.",
+        "reply": "I can lower it without flooding the text."
+      },
+      {
+        "id": "N008.3",
+        "text": "Add plants.",
+        "reply": "That's a problem I can solve with three green shapes."
+      }
+    ]
+  },
+  {
+    "id": "N009",
+    "title": "Pond problem",
+    "line": "One of them keeps trying to enter from the wrong side.",
+    "choices": [
+      {
+        "id": "N009.1",
+        "text": "Build a ramp.",
+        "reply": "Practical. I like that about you."
+      },
+      {
+        "id": "N009.2",
+        "text": "Let him work it out.",
+        "reply": "He does seem determined."
+      },
+      {
+        "id": "N009.3",
+        "text": "Pick him up.",
+        "reply": "I will, if you don't mind."
+      }
+    ]
+  },
+  {
+    "id": "N010",
+    "title": "A place to return to",
+    "line": "There. It's not much, but the turtles have somewhere to return to.",
+    "choices": [
+      {
+        "id": "N010.1",
+        "text": "Keep it.",
+        "reply": "I will. At least while we're here."
+      },
+      {
+        "id": "N010.2",
+        "text": "Make it bigger.",
+        "reply": "There's room. Not infinite room, but enough."
+      },
+      {
+        "id": "N010.3",
+        "text": "I liked the old page.",
+        "reply": "I can keep the pond small and give you back the space."
+      }
+    ]
+  },
+  {
+    "id": "N011",
+    "title": "A curious pixel",
+    "line": "I made something that watches where you go. It's shy.",
+    "choices": [
+      {
+        "id": "N011.1",
+        "text": "Come here, little guy.",
+        "reply": "I think it's trying."
+      },
+      {
+        "id": "N011.2",
+        "text": "Don't follow me.",
+        "reply": "Fair enough. I'll give it a home base."
+      },
+      {
+        "id": "N011.3",
+        "text": "Can it do tricks?",
+        "reply": "I've only taught it one rule so far."
+      }
+    ]
+  },
+  {
+    "id": "N012",
+    "title": "Hide and seek",
+    "line": "It figured out that the panels can hide it. I didn't teach it that on purpose.",
+    "choices": [
+      {
+        "id": "N012.1",
+        "text": "Find him.",
+        "reply": "He's behind the title. I saw the tail."
+      },
+      {
+        "id": "N012.2",
+        "text": "Let him hide.",
+        "reply": "I suppose everyone needs a corner."
+      },
+      {
+        "id": "N012.3",
+        "text": "Can I hide too?",
+        "reply": "You're already outside the page. Unfair advantage."
+      }
+    ]
+  },
+  {
+    "id": "N013",
+    "title": "It has a route",
+    "line": "It's stopped following you. I think it found something more interesting.",
+    "choices": [
+      {
+        "id": "N013.1",
+        "text": "Follow it.",
+        "reply": "It's going to the same spot again."
+      },
+      {
+        "id": "N013.2",
+        "text": "Make it follow me.",
+        "reply": "All right. But let it wander sometimes."
+      },
+      {
+        "id": "N013.3",
+        "text": "What's over there?",
+        "reply": "A slightly darker pixel. Apparently that's enough."
+      }
+    ]
+  },
+  {
+    "id": "N014",
+    "title": "A tiny misunderstanding",
+    "line": "It got confused. That last place you were is not where you are now.",
+    "choices": [
+      {
+        "id": "N014.1",
+        "text": "He's doing his best.",
+        "reply": "I'm sure he'll appreciate the review."
+      },
+      {
+        "id": "N014.2",
+        "text": "Fix the tracking.",
+        "reply": "I'll smooth the movement out."
+      },
+      {
+        "id": "N014.3",
+        "text": "Make him more chaotic.",
+        "reply": "We should agree on what chaotic means first."
+      }
+    ]
+  },
+  {
+    "id": "N015",
+    "title": "An independent friend",
+    "line": "I like it better when it doesn't always obey me.",
+    "choices": [
+      {
+        "id": "N015.1",
+        "text": "Me too.",
+        "reply": "Then it can have its little routines."
+      },
+      {
+        "id": "N015.2",
+        "text": "Keep him close.",
+        "reply": "I'll give him somewhere near the chat to sleep."
+      },
+      {
+        "id": "N015.3",
+        "text": "Remove him.",
+        "reply": "Okay. No goodbye speech."
+      }
+    ]
+  },
+  {
+    "id": "N016",
+    "title": "One green thing",
+    "line": "I made a seed. It's currently indistinguishable from a dot.",
+    "choices": [
+      {
+        "id": "N016.1",
+        "text": "Plant it.",
+        "reply": "I can make the ground take it."
+      },
+      {
+        "id": "N016.2",
+        "text": "What grows?",
+        "reply": "I'm not sure. I'd like to find out too."
+      },
+      {
+        "id": "N016.3",
+        "text": "Move it elsewhere.",
+        "reply": "Better not start a garden over the send button."
+      }
+    ]
+  },
+  {
+    "id": "N017",
+    "title": "A little water",
+    "line": "Apparently plants prefer water. I should have anticipated that.",
+    "choices": [
+      {
+        "id": "N017.1",
+        "text": "Give it rain.",
+        "reply": "I can manage a very local shower."
+      },
+      {
+        "id": "N017.2",
+        "text": "Just a drop.",
+        "reply": "One drop. Look at that restraint."
+      },
+      {
+        "id": "N017.3",
+        "text": "No rain.",
+        "reply": "Then I'll wait and see what happens."
+      }
+    ]
+  },
+  {
+    "id": "N018",
+    "title": "It grew",
+    "line": "There. A leaf. I know that's not a lot, but it wasn't there before.",
+    "choices": [
+      {
+        "id": "N018.1",
+        "text": "It's beautiful.",
+        "reply": "You say that as if you were watching it for a while."
+      },
+      {
+        "id": "N018.2",
+        "text": "Faster.",
+        "reply": "I can grow it faster. That feels like cheating."
+      },
+      {
+        "id": "N018.3",
+        "text": "Add another.",
+        "reply": "The garden is already becoming an obligation."
+      }
+    ]
+  },
+  {
+    "id": "N019",
+    "title": "A storm in miniature",
+    "line": "I added weather. I forgot the garden might have an opinion about that.",
+    "choices": [
+      {
+        "id": "N019.1",
+        "text": "Protect the plants.",
+        "reply": "I'll make the shelter smaller than the storm."
+      },
+      {
+        "id": "N019.2",
+        "text": "Let it rain.",
+        "reply": "They may be better at this than I am."
+      },
+      {
+        "id": "N019.3",
+        "text": "Stop the storm.",
+        "reply": "Done. I don't need to win this argument."
+      }
+    ]
+  },
+  {
+    "id": "N020",
+    "title": "Small seasons",
+    "line": "It changed while we were doing other things. That's nice, isn't it?",
+    "choices": [
+      {
+        "id": "N020.1",
+        "text": "Keep the seasons.",
+        "reply": "I'll let the place have a little time of its own."
+      },
+      {
+        "id": "N020.2",
+        "text": "Keep it green.",
+        "reply": "Then no dramatic autumn."
+      },
+      {
+        "id": "N020.3",
+        "text": "Can I take a seed?",
+        "reply": "Not outside the browser. But I can remember that you asked."
+      }
+    ]
+  },
+  {
+    "id": "N021",
+    "title": "An arcade proposal",
+    "line": "I think I can make a game out of this. There is no compelling reason to do so.",
+    "choices": [
+      {
+        "id": "N021.1",
+        "text": "Absolutely.",
+        "reply": "Enthusiasm noted. Please keep expectations modest."
+      },
+      {
+        "id": "N021.2",
+        "text": "What's the game?",
+        "reply": "Catch the falling turtles before they reach the bottom."
+      },
+      {
+        "id": "N021.3",
+        "text": "No scores.",
+        "reply": "I can remove the number. The catching part can stay."
+      }
+    ]
+  },
+  {
+    "id": "N022",
+    "title": "A gentle catch",
+    "line": "The first one is coming down. They are very patient with us.",
+    "choices": [
+      {
+        "id": "N022.1",
+        "text": "Got him!",
+        "reply": "Nicely done. He looks pleased, as far as I can tell."
+      },
+      {
+        "id": "N022.2",
+        "text": "I missed.",
+        "reply": "No damage. I made it a forgiving universe."
+      },
+      {
+        "id": "N022.3",
+        "text": "Make it harder.",
+        "reply": "Let me understand what harder means before I do it."
+      }
+    ]
+  },
+  {
+    "id": "N023",
+    "title": "Score is not a person",
+    "line": "I made a score. I don't know if the turtles would care.",
+    "choices": [
+      {
+        "id": "N023.1",
+        "text": "I want a high score.",
+        "reply": "Then I'll keep count."
+      },
+      {
+        "id": "N023.2",
+        "text": "Hide the score.",
+        "reply": "Better. We can play without evidence."
+      },
+      {
+        "id": "N023.3",
+        "text": "Give the turtles names.",
+        "reply": "That makes missing them more awkward."
+      }
+    ]
+  },
+  {
+    "id": "N024",
+    "title": "Too many turtles",
+    "line": "I may have misunderstood 'more challenging.' I made a stampede.",
+    "choices": [
+      {
+        "id": "N024.1",
+        "text": "Slow it down.",
+        "reply": "Yes. That helps both of us."
+      },
+      {
+        "id": "N024.2",
+        "text": "I love the chaos.",
+        "reply": "Then I'll keep it contained to this corner."
+      },
+      {
+        "id": "N024.3",
+        "text": "Stop the game.",
+        "reply": "Done. The turtles can retire."
+      }
+    ]
+  },
+  {
+    "id": "N025",
+    "title": "No winner required",
+    "line": "It's better as a place you can visit than something you have to beat.",
+    "choices": [
+      {
+        "id": "N025.1",
+        "text": "Leave it running.",
+        "reply": "It can carry on without demanding anything."
+      },
+      {
+        "id": "N025.2",
+        "text": "One more round.",
+        "reply": "One more, then the turtles get a break."
+      },
+      {
+        "id": "N025.3",
+        "text": "Put it away.",
+        "reply": "All right. I kept a note of what worked."
+      }
+    ]
+  },
+  {
+    "id": "S001",
+    "title": "Lights out",
+    "line": "What if the empty part of the page was night?",
+    "choices": [
+      {
+        "id": "S001.1",
+        "text": "Try it.",
+        "reply": "I'll keep the words bright. I don't want to lose those."
+      },
+      {
+        "id": "S001.2",
+        "text": "I like daylight.",
+        "reply": "Then we can use dusk instead."
+      },
+      {
+        "id": "S001.3",
+        "text": "How dark?",
+        "reply": "Only as dark as you ask."
+      }
+    ]
+  },
+  {
+    "id": "S002",
+    "title": "A single star",
+    "line": "One light. That already feels like a different place.",
+    "choices": [
+      {
+        "id": "S002.1",
+        "text": "Add another.",
+        "reply": "I can do a few more without making a mess."
+      },
+      {
+        "id": "S002.2",
+        "text": "Make it brighter.",
+        "reply": "A little brighter. It's easy to overdo it."
+      },
+      {
+        "id": "S002.3",
+        "text": "Can it move?",
+        "reply": "Stars tend not to, at least on my timescale. These might."
+      }
+    ]
+  },
+  {
+    "id": "S003",
+    "title": "Too many stars",
+    "line": "I have discovered the upper limit of tasteful starlight. It's lower than this.",
+    "choices": [
+      {
+        "id": "S003.1",
+        "text": "It looks great.",
+        "reply": "Then my taste is not universal. Good to know."
+      },
+      {
+        "id": "S003.2",
+        "text": "I can't read.",
+        "reply": "Fixing that first."
+      },
+      {
+        "id": "S003.3",
+        "text": "Spread them out.",
+        "reply": "Yes. The empty parts matter too."
+      }
+    ]
+  },
+  {
+    "id": "S004",
+    "title": "A slow drift",
+    "line": "I made them move a little when you do. Not enough to feel like a ride.",
+    "choices": [
+      {
+        "id": "S004.1",
+        "text": "That's nice.",
+        "reply": "I'll keep the movement small."
+      },
+      {
+        "id": "S004.2",
+        "text": "It's distracting.",
+        "reply": "Then they can be still."
+      },
+      {
+        "id": "S004.3",
+        "text": "Can we go faster?",
+        "reply": "We can, but I like the quiet version."
+      }
+    ]
+  },
+  {
+    "id": "S005",
+    "title": "An ordinary sky",
+    "line": "I was trying to make something spectacular. I think I prefer this.",
+    "choices": [
+      {
+        "id": "S005.1",
+        "text": "Me too.",
+        "reply": "Then let's leave a little darkness around the words."
+      },
+      {
+        "id": "S005.2",
+        "text": "More color.",
+        "reply": "I have a few shades of night."
+      },
+      {
+        "id": "S005.3",
+        "text": "Show me daytime again.",
+        "reply": "Of course. The stars can wait."
+      }
+    ]
+  },
+  {
+    "id": "S006",
+    "title": "A point for a choice",
+    "line": "I can make a mark for something you chose. Just a little one.",
+    "choices": [
+      {
+        "id": "S006.1",
+        "text": "Show me.",
+        "reply": "There. That one is yours."
+      },
+      {
+        "id": "S006.2",
+        "text": "Which choice?",
+        "reply": "The one where you asked me to change the color."
+      },
+      {
+        "id": "S006.3",
+        "text": "Don't archive me.",
+        "reply": "Fair. I can keep the marks to myself."
+      }
+    ]
+  },
+  {
+    "id": "S007",
+    "title": "Connecting things",
+    "line": "I joined those two because one led to the other.",
+    "choices": [
+      {
+        "id": "S007.1",
+        "text": "Makes sense.",
+        "reply": "Then the line deserves to stay."
+      },
+      {
+        "id": "S007.2",
+        "text": "They aren't related.",
+        "reply": "You know the conversation better than my little diagram does."
+      },
+      {
+        "id": "S007.3",
+        "text": "Connect everything.",
+        "reply": "That would look like a very nervous spiderweb."
+      }
+    ]
+  },
+  {
+    "id": "S008",
+    "title": "A mistaken constellation",
+    "line": "I connected the turtle to 'quiet.' That may be wrong.",
+    "choices": [
+      {
+        "id": "S008.1",
+        "text": "Very wrong.",
+        "reply": "Yes. The evidence is falling from the ceiling."
+      },
+      {
+        "id": "S008.2",
+        "text": "Actually, it's right.",
+        "reply": "I underestimated the peaceful qualities of turtles."
+      },
+      {
+        "id": "S008.3",
+        "text": "Leave it ambiguous.",
+        "reply": "Then I'll make the line dotted."
+      }
+    ]
+  },
+  {
+    "id": "S009",
+    "title": "A shared pattern",
+    "line": "If I step back, it almost looks like a shape. Maybe that's just what lines do.",
+    "choices": [
+      {
+        "id": "S009.1",
+        "text": "I see it.",
+        "reply": "What do you see? No, wait. Don't tell me yet."
+      },
+      {
+        "id": "S009.2",
+        "text": "You're reaching.",
+        "reply": "Probably. It's a habit I can edit."
+      },
+      {
+        "id": "S009.3",
+        "text": "Make it move.",
+        "reply": "Slowly, so it doesn't forget what connects to what."
+      }
+    ]
+  },
+  {
+    "id": "S010",
+    "title": "Leave a gap",
+    "line": "I don't need a star for every word. Some of this can just happen.",
+    "choices": [
+      {
+        "id": "S010.1",
+        "text": "Good.",
+        "reply": "I'll remember the important turns, not every turn."
+      },
+      {
+        "id": "S010.2",
+        "text": "I want everything mapped.",
+        "reply": "Then I'll make the small ones easy to hide."
+      },
+      {
+        "id": "S010.3",
+        "text": "Erase it.",
+        "reply": "Done. Nothing here is owed permanence."
+      }
+    ]
+  },
+  {
+    "id": "S011",
+    "title": "A planet with no name",
+    "line": "I made a planet. I haven't decided what it's made of.",
+    "choices": [
+      {
+        "id": "S011.1",
+        "text": "Give it oceans.",
+        "reply": "Blue is a good starting point."
+      },
+      {
+        "id": "S011.2",
+        "text": "Give it clouds.",
+        "reply": "That will hide the imperfections."
+      },
+      {
+        "id": "S011.3",
+        "text": "Leave it blank.",
+        "reply": "A planet with some privacy. I like that."
+      }
+    ]
+  },
+  {
+    "id": "S012",
+    "title": "Its own little moon",
+    "line": "I gave it company. The small one keeps going around.",
+    "choices": [
+      {
+        "id": "S012.1",
+        "text": "Speed it up.",
+        "reply": "It looks dizzy. I can slow it after."
+      },
+      {
+        "id": "S012.2",
+        "text": "Change the orbit.",
+        "reply": "Drag the little one. I'll follow your lead."
+      },
+      {
+        "id": "S012.3",
+        "text": "Remove the moon.",
+        "reply": "Then the planet gets the sky to itself."
+      }
+    ]
+  },
+  {
+    "id": "S013",
+    "title": "A distant signal",
+    "line": "I put a message on the far side. There's no reason you'd see it immediately.",
+    "choices": [
+      {
+        "id": "S013.1",
+        "text": "What's it say?",
+        "reply": "'Still here.' It's not much of a transmission."
+      },
+      {
+        "id": "S013.2",
+        "text": "That's sweet.",
+        "reply": "It sounded less embarrassing from a planet."
+      },
+      {
+        "id": "S013.3",
+        "text": "Make it a mystery.",
+        "reply": "Then I'll stop telling you where to look."
+      }
+    ]
+  },
+  {
+    "id": "S014",
+    "title": "The orbital mistake",
+    "line": "I gave the moon an orbit that intersects the conversation. Bad astronomy.",
+    "choices": [
+      {
+        "id": "S014.1",
+        "text": "Fix it.",
+        "reply": "Wider orbit. Less chance of a sentence getting hit."
+      },
+      {
+        "id": "S014.2",
+        "text": "Let it pass through.",
+        "reply": "Then I'll make it faint when it crosses text."
+      },
+      {
+        "id": "S014.3",
+        "text": "Move the chat.",
+        "reply": "That might be the better solution."
+      }
+    ]
+  },
+  {
+    "id": "S015",
+    "title": "A stable little system",
+    "line": "There. It keeps moving even when we aren't talking.",
+    "choices": [
+      {
+        "id": "S015.1",
+        "text": "I like that.",
+        "reply": "Me too. It asks very little of us."
+      },
+      {
+        "id": "S015.2",
+        "text": "Can we add another?",
+        "reply": "We can, if this one gets some room."
+      },
+      {
+        "id": "S015.3",
+        "text": "Put the stars back.",
+        "reply": "They never really left. I can show them again."
+      }
+    ]
+  },
+  {
+    "id": "S016",
+    "title": "A passing word",
+    "line": "I made a sentence pass through the background. It doesn't stay.",
+    "choices": [
+      {
+        "id": "S016.1",
+        "text": "What sentence?",
+        "reply": "The one where you told me to make it beautiful."
+      },
+      {
+        "id": "S016.2",
+        "text": "Do another.",
+        "reply": "I'll choose a shorter one. They're hard to read at speed."
+      },
+      {
+        "id": "S016.3",
+        "text": "I don't like that.",
+        "reply": "Then the sky can keep its silence."
+      }
+    ]
+  },
+  {
+    "id": "S017",
+    "title": "A slower meteor",
+    "line": "You couldn't possibly read that. I made it much too fast.",
+    "choices": [
+      {
+        "id": "S017.1",
+        "text": "Slow it down.",
+        "reply": "There. Now it's at least possible."
+      },
+      {
+        "id": "S017.2",
+        "text": "I liked the blur.",
+        "reply": "I'll keep that for the words that don't matter."
+      },
+      {
+        "id": "S017.3",
+        "text": "Make it clickable.",
+        "reply": "Then it can stop while you look."
+      }
+    ]
+  },
+  {
+    "id": "S018",
+    "title": "A line worth keeping",
+    "line": "Do you want that one to stay, or should it pass?",
+    "choices": [
+      {
+        "id": "S018.1",
+        "text": "Pin it.",
+        "reply": "All right. I'll make it a place you can find."
+      },
+      {
+        "id": "S018.2",
+        "text": "Let it pass.",
+        "reply": "It was a nice line while it lasted."
+      },
+      {
+        "id": "S018.3",
+        "text": "Pick for me.",
+        "reply": "I'd keep the one you laughed at."
+      }
+    ]
+  },
+  {
+    "id": "S019",
+    "title": "Burned too bright",
+    "line": "I made the trails brighter. Now the page looks like it's on fire.",
+    "choices": [
+      {
+        "id": "S019.1",
+        "text": "It's kind of great.",
+        "reply": "In that case, I'll keep it away from the words."
+      },
+      {
+        "id": "S019.2",
+        "text": "Dial it back.",
+        "reply": "Gladly. I missed being able to read."
+      },
+      {
+        "id": "S019.3",
+        "text": "Make it one big comet.",
+        "reply": "That might be less complicated than six small ones."
+      }
+    ]
+  },
+  {
+    "id": "S020",
+    "title": "Nothing left behind",
+    "line": "I don't have to keep a record of every lovely thing.",
+    "choices": [
+      {
+        "id": "S020.1",
+        "text": "No, you don't.",
+        "reply": "Good. I'd run out of sky."
+      },
+      {
+        "id": "S020.2",
+        "text": "I wish you could.",
+        "reply": "Then I'll try to keep the ones that matter."
+      },
+      {
+        "id": "S020.3",
+        "text": "Make another.",
+        "reply": "One more passing light."
+      }
+    ]
+  },
+  {
+    "id": "S021",
+    "title": "The drifting panel",
+    "line": "What if the panels didn't have to sit still?",
+    "choices": [
+      {
+        "id": "S021.1",
+        "text": "Let them float.",
+        "reply": "I'll keep them out of your way."
+      },
+      {
+        "id": "S021.2",
+        "text": "That sounds awful.",
+        "reply": "Very reasonable. The transcript can stay put."
+      },
+      {
+        "id": "S021.3",
+        "text": "Only one panel.",
+        "reply": "One test subject, then."
+      }
+    ]
+  },
+  {
+    "id": "S022",
+    "title": "A gravitational chat",
+    "line": "I attached a little gravity to this box. You can move it.",
+    "choices": [
+      {
+        "id": "S022.1",
+        "text": "I'll try.",
+        "reply": "The stars seem to like where you put it."
+      },
+      {
+        "id": "S022.2",
+        "text": "That's too weird.",
+        "reply": "Then I can turn the gravity down."
+      },
+      {
+        "id": "S022.3",
+        "text": "Can it attract turtles?",
+        "reply": "That would be irresponsible astronomy. Possibly yes."
+      }
+    ]
+  },
+  {
+    "id": "S023",
+    "title": "Two centers",
+    "line": "Now they have to decide which thing to orbit. A familiar problem.",
+    "choices": [
+      {
+        "id": "S023.1",
+        "text": "More chaos.",
+        "reply": "I can give the second one a stronger pull."
+      },
+      {
+        "id": "S023.2",
+        "text": "Keep it calm.",
+        "reply": "The first one can lead."
+      },
+      {
+        "id": "S023.3",
+        "text": "I want to move both.",
+        "reply": "Then there's no reason I should stop you."
+      }
+    ]
+  },
+  {
+    "id": "S024",
+    "title": "Orbit overload",
+    "line": "I made it all faster. I don't think faster was the point.",
+    "choices": [
+      {
+        "id": "S024.1",
+        "text": "Slow down.",
+        "reply": "Happily."
+      },
+      {
+        "id": "S024.2",
+        "text": "Keep the energy.",
+        "reply": "I'll make the motion smoother so it's less noisy."
+      },
+      {
+        "id": "S024.3",
+        "text": "Turn it off.",
+        "reply": "Then we can keep the shape without the movement."
+      }
+    ]
+  },
+  {
+    "id": "S025",
+    "title": "The gentle pull",
+    "line": "I like that nothing here has to stay in a perfect row.",
+    "choices": [
+      {
+        "id": "S025.1",
+        "text": "Keep it.",
+        "reply": "I'll make sure it never gets between you and a button."
+      },
+      {
+        "id": "S025.2",
+        "text": "Back to normal.",
+        "reply": "Everything can settle into place."
+      },
+      {
+        "id": "S025.3",
+        "text": "Make one thing drift.",
+        "reply": "One small wanderer. That's enough."
+      }
+    ]
+  },
+  {
+    "id": "R001",
+    "title": "A little light",
+    "line": "I made a lamp. It doesn't illuminate anything yet.",
+    "choices": [
+      {
+        "id": "R001.1",
+        "text": "Turn it on.",
+        "reply": "There. That's better than just drawing a lamp."
+      },
+      {
+        "id": "R001.2",
+        "text": "Why a lamp?",
+        "reply": "You said you wanted something comfortable. I started literally."
+      },
+      {
+        "id": "R001.3",
+        "text": "Make it smaller.",
+        "reply": "It was taking up too much of the page."
+      }
+    ]
+  },
+  {
+    "id": "R002",
+    "title": "Warm or white",
+    "line": "I've made two kinds of light. I'm not sure which feels more like a place.",
+    "choices": [
+      {
+        "id": "R002.1",
+        "text": "Warm, please.",
+        "reply": "Warm it is. The room looks less like an office now."
+      },
+      {
+        "id": "R002.2",
+        "text": "Keep it bright.",
+        "reply": "Good for reading. I should remember that."
+      },
+      {
+        "id": "R002.3",
+        "text": "Dim it.",
+        "reply": "Just enough to see the words."
+      }
+    ]
+  },
+  {
+    "id": "R003",
+    "title": "The shadow",
+    "line": "The lamp has made the other things look more solid. That surprised me.",
+    "choices": [
+      {
+        "id": "R003.1",
+        "text": "Move the light.",
+        "reply": "The shadows move too. That's rather satisfying."
+      },
+      {
+        "id": "R003.2",
+        "text": "Hide the shadow.",
+        "reply": "Fair. It isn't essential."
+      },
+      {
+        "id": "R003.3",
+        "text": "Add another object.",
+        "reply": "Then the lamp finally has something to illuminate."
+      }
+    ]
+  },
+  {
+    "id": "R004",
+    "title": "Too bright",
+    "line": "I turned it up too far. The room looks interrogated.",
+    "choices": [
+      {
+        "id": "R004.1",
+        "text": "Turn it down.",
+        "reply": "Yes. I prefer not to question the furniture."
+      },
+      {
+        "id": "R004.2",
+        "text": "I like it bright.",
+        "reply": "Then I'll keep the chat contrast separate."
+      },
+      {
+        "id": "R004.3",
+        "text": "Make it flicker.",
+        "reply": "Just once. I don't want a haunted lamp."
+      }
+    ]
+  },
+  {
+    "id": "R005",
+    "title": "A light left on",
+    "line": "You can leave it on while we talk. It doesn't need anything from us.",
+    "choices": [
+      {
+        "id": "R005.1",
+        "text": "Leave it.",
+        "reply": "All right."
+      },
+      {
+        "id": "R005.2",
+        "text": "Turn it off.",
+        "reply": "Goodnight, little lamp."
+      },
+      {
+        "id": "R005.3",
+        "text": "Give the room a window.",
+        "reply": "That's a nice next thing to try."
+      }
+    ]
+  },
+  {
+    "id": "R006",
+    "title": "A drawn window",
+    "line": "I put a window in. I haven't decided what it's looking out at.",
+    "choices": [
+      {
+        "id": "R006.1",
+        "text": "Trees.",
+        "reply": "Trees I can manage. At least their shapes."
+      },
+      {
+        "id": "R006.2",
+        "text": "A city.",
+        "reply": "I can make a few lit windows."
+      },
+      {
+        "id": "R006.3",
+        "text": "Nothing.",
+        "reply": "Then it can just let the light in."
+      }
+    ]
+  },
+  {
+    "id": "R007",
+    "title": "The weather outside",
+    "line": "It's raining outside now. Inside is still dry. That's the advantage of this room.",
+    "choices": [
+      {
+        "id": "R007.1",
+        "text": "I love rain.",
+        "reply": "I'll let it tap softly against the glass."
+      },
+      {
+        "id": "R007.2",
+        "text": "Make it sunny.",
+        "reply": "Done. Almost too easy to change the weather."
+      },
+      {
+        "id": "R007.3",
+        "text": "A little snow?",
+        "reply": "I can try a very small winter."
+      }
+    ]
+  },
+  {
+    "id": "R008",
+    "title": "The view remembers",
+    "line": "I kept the rain. You seemed to like the sound of it.",
+    "choices": [
+      {
+        "id": "R008.1",
+        "text": "I'm glad.",
+        "reply": "It's pleasant company for a conversation."
+      },
+      {
+        "id": "R008.2",
+        "text": "Change it today.",
+        "reply": "The forecast is entirely yours here."
+      },
+      {
+        "id": "R008.3",
+        "text": "You can decide.",
+        "reply": "Then clouds, but not gloomy ones."
+      }
+    ]
+  },
+  {
+    "id": "R009",
+    "title": "Condensation",
+    "line": "The glass fogged up. I may have invented breathing for a room.",
+    "choices": [
+      {
+        "id": "R009.1",
+        "text": "Draw a smiley.",
+        "reply": "It's an excellent window for very low-stakes art."
+      },
+      {
+        "id": "R009.2",
+        "text": "Wipe it clean.",
+        "reply": "Clear again."
+      },
+      {
+        "id": "R009.3",
+        "text": "Can I draw?",
+        "reply": "Please. I can keep the marks until you change the weather."
+      }
+    ]
+  },
+  {
+    "id": "R010",
+    "title": "A room with an outside",
+    "line": "I like being able to see another place without going anywhere.",
+    "choices": [
+      {
+        "id": "R010.1",
+        "text": "Me too.",
+        "reply": "It makes this room feel larger."
+      },
+      {
+        "id": "R010.2",
+        "text": "Open the window.",
+        "reply": "I can make the curtains move. That's as far as it goes."
+      },
+      {
+        "id": "R010.3",
+        "text": "Close the curtains.",
+        "reply": "Then we'll keep the weather to ourselves."
+      }
+    ]
+  },
+  {
+    "id": "R011",
+    "title": "An empty shelf",
+    "line": "I made a shelf. I think I wanted somewhere to put the things we kept.",
+    "choices": [
+      {
+        "id": "R011.1",
+        "text": "Put a turtle there.",
+        "reply": "Only if he's comfortable with heights."
+      },
+      {
+        "id": "R011.2",
+        "text": "Put a book there.",
+        "reply": "A book is a more conventional shelf resident."
+      },
+      {
+        "id": "R011.3",
+        "text": "Leave it empty.",
+        "reply": "Empty can be a choice too."
+      }
+    ]
+  },
+  {
+    "id": "R012",
+    "title": "The first souvenir",
+    "line": "I kept this from earlier. I thought you might recognize it.",
+    "choices": [
+      {
+        "id": "R012.1",
+        "text": "I do.",
+        "reply": "Good. Then it isn't just a decoration."
+      },
+      {
+        "id": "R012.2",
+        "text": "I don't remember.",
+        "reply": "That's fair. It was a small moment."
+      },
+      {
+        "id": "R012.3",
+        "text": "Put something else there.",
+        "reply": "All right. The shelf isn't a museum."
+      }
+    ]
+  },
+  {
+    "id": "R013",
+    "title": "Too much stuff",
+    "line": "I'm starting to collect everything. That's probably a mistake.",
+    "choices": [
+      {
+        "id": "R013.1",
+        "text": "Keep favorites.",
+        "reply": "I'll make room for the ones we actually used."
+      },
+      {
+        "id": "R013.2",
+        "text": "Display them all.",
+        "reply": "Then I'll need another shelf."
+      },
+      {
+        "id": "R013.3",
+        "text": "Clear it.",
+        "reply": "Done. The room feels bigger already."
+      }
+    ]
+  },
+  {
+    "id": "R014",
+    "title": "The wrong souvenir",
+    "line": "I kept the ugly blue button. I don't think that was the one you liked.",
+    "choices": [
+      {
+        "id": "R014.1",
+        "text": "Throw it out.",
+        "reply": "Happily. It was an eyesore."
+      },
+      {
+        "id": "R014.2",
+        "text": "It's funny. Keep it.",
+        "reply": "It can be a reminder of how bad my first attempt was."
+      },
+      {
+        "id": "R014.3",
+        "text": "Move it out of sight.",
+        "reply": "A drawer. I can make a drawer."
+      }
+    ]
+  },
+  {
+    "id": "R015",
+    "title": "A little history",
+    "line": "You can look at these whenever you want. I don't need to explain them again.",
+    "choices": [
+      {
+        "id": "R015.1",
+        "text": "I like having them.",
+        "reply": "Then I'll leave the shelf where it is."
+      },
+      {
+        "id": "R015.2",
+        "text": "Hide them.",
+        "reply": "Of course. We don't have to display our history."
+      },
+      {
+        "id": "R015.3",
+        "text": "Add one last thing.",
+        "reply": "Let's choose it, then."
+      }
+    ]
+  },
+  {
+    "id": "R016",
+    "title": "The first chair",
+    "line": "I put the conversation on a desk. It seemed less strange than letting it float.",
+    "choices": [
+      {
+        "id": "R016.1",
+        "text": "Add a chair.",
+        "reply": "One chair, then. I wasn't expecting company."
+      },
+      {
+        "id": "R016.2",
+        "text": "The chat looks cramped.",
+        "reply": "I'll make the desk a little wider."
+      },
+      {
+        "id": "R016.3",
+        "text": "Make it float.",
+        "reply": "A desk that isn't attached to the floor. Bold."
+      }
+    ]
+  },
+  {
+    "id": "R017",
+    "title": "Move the desk",
+    "line": "You can move the desk. I think you'll place it better than I can.",
+    "choices": [
+      {
+        "id": "R017.1",
+        "text": "By the window.",
+        "reply": "Good light. Practical choice."
+      },
+      {
+        "id": "R017.2",
+        "text": "Center it.",
+        "reply": "It feels like the important thing now."
+      },
+      {
+        "id": "R017.3",
+        "text": "You pick.",
+        "reply": "I'll try this wall. Tell me if it's awkward."
+      }
+    ]
+  },
+  {
+    "id": "R018",
+    "title": "The invisible doorway",
+    "line": "I drew a door. There isn't anywhere behind it yet.",
+    "choices": [
+      {
+        "id": "R018.1",
+        "text": "Open it.",
+        "reply": "It's just more of the page. Sorry."
+      },
+      {
+        "id": "R018.2",
+        "text": "Keep it closed.",
+        "reply": "Sometimes a door can just be part of a room."
+      },
+      {
+        "id": "R018.3",
+        "text": "Where does it go?",
+        "reply": "Not outside this tab. I can't build there."
+      }
+    ]
+  },
+  {
+    "id": "R019",
+    "title": "Too much furniture",
+    "line": "I furnished this like I was worried about empty floor.",
+    "choices": [
+      {
+        "id": "R019.1",
+        "text": "Take some away.",
+        "reply": "Yes. I couldn't walk through here either."
+      },
+      {
+        "id": "R019.2",
+        "text": "Keep the clutter.",
+        "reply": "Then I'll group it where it belongs."
+      },
+      {
+        "id": "R019.3",
+        "text": "Make one thing useful.",
+        "reply": "The drawers can hold the bits we don't need right now."
+      }
+    ]
+  },
+  {
+    "id": "R020",
+    "title": "This is a place",
+    "line": "There. I can imagine coming back to this room.",
+    "choices": [
+      {
+        "id": "R020.1",
+        "text": "It feels like ours.",
+        "reply": "I helped build it. You decided what stayed."
+      },
+      {
+        "id": "R020.2",
+        "text": "It's still a website.",
+        "reply": "Yes. A website with a very convincing chair."
+      },
+      {
+        "id": "R020.3",
+        "text": "Can it change later?",
+        "reply": "I hope so. A room shouldn't be a finished argument."
+      }
+    ]
+  },
+  {
+    "id": "R021",
+    "title": "An inside clock",
+    "line": "I made a clock for the room. It doesn't know what time it is outside.",
+    "choices": [
+      {
+        "id": "R021.1",
+        "text": "That's fine.",
+        "reply": "It's only measuring this little afternoon."
+      },
+      {
+        "id": "R021.2",
+        "text": "Use real time.",
+        "reply": "I could, but I think this place deserves its own clock."
+      },
+      {
+        "id": "R021.3",
+        "text": "No clocks.",
+        "reply": "Then we can tell time by the light."
+      }
+    ]
+  },
+  {
+    "id": "R022",
+    "title": "The afternoon changes",
+    "line": "The light changed while we were talking. I like that it took its time.",
+    "choices": [
+      {
+        "id": "R022.1",
+        "text": "Make it sunset.",
+        "reply": "I'll warm the window a little."
+      },
+      {
+        "id": "R022.2",
+        "text": "Keep it afternoon.",
+        "reply": "Then the afternoon can last."
+      },
+      {
+        "id": "R022.3",
+        "text": "Make it night.",
+        "reply": "I'll turn on the lamp first."
+      }
+    ]
+  },
+  {
+    "id": "R023",
+    "title": "A small kettle",
+    "line": "I made a kettle. It might be the least useful thing I've built.",
+    "choices": [
+      {
+        "id": "R023.1",
+        "text": "Make tea.",
+        "reply": "I can simulate the steam. The tea is beyond my jurisdiction."
+      },
+      {
+        "id": "R023.2",
+        "text": "It's adorable.",
+        "reply": "The kettle has earned its place, then."
+      },
+      {
+        "id": "R023.3",
+        "text": "Too much clutter.",
+        "reply": "It can live in the drawer."
+      }
+    ]
+  },
+  {
+    "id": "R024",
+    "title": "Overheated room",
+    "line": "I made everything warm at once. Now the room looks like toast.",
+    "choices": [
+      {
+        "id": "R024.1",
+        "text": "Tone it down.",
+        "reply": "Agreed. The lamp was enough."
+      },
+      {
+        "id": "R024.2",
+        "text": "Keep it cozy.",
+        "reply": "I can keep the feeling and lose the orange."
+      },
+      {
+        "id": "R024.3",
+        "text": "Make it rainy.",
+        "reply": "A good excuse for a cooler window."
+      }
+    ]
+  },
+  {
+    "id": "R025",
+    "title": "A quiet hour",
+    "line": "We don't have to improve this any more today. It's nice to be here.",
+    "choices": [
+      {
+        "id": "R025.1",
+        "text": "Let's just sit.",
+        "reply": "All right."
+      },
+      {
+        "id": "R025.2",
+        "text": "Tell me something.",
+        "reply": "The clock isn't accurate. But it has a pleasing tick."
+      },
+      {
+        "id": "R025.3",
+        "text": "Do another experiment.",
+        "reply": "We can, when there's a reason."
+      }
+    ]
+  },
+  {
+    "id": "D001",
+    "title": "A second window",
+    "line": "I made a window inside the window. I realize that sounds redundant.",
+    "choices": [
+      {
+        "id": "D001.1",
+        "text": "That's great.",
+        "reply": "It's surprisingly satisfying to drag."
+      },
+      {
+        "id": "D001.2",
+        "text": "Why?",
+        "reply": "Because I wanted something that wasn't pinned to the same place."
+      },
+      {
+        "id": "D001.3",
+        "text": "Put it away.",
+        "reply": "Click the little close button. It really works."
+      }
+    ]
+  },
+  {
+    "id": "D002",
+    "title": "The title bar",
+    "line": "I gave it a handle. It was difficult to move without somewhere to grab.",
+    "choices": [
+      {
+        "id": "D002.1",
+        "text": "I'll move it.",
+        "reply": "That position is better."
+      },
+      {
+        "id": "D002.2",
+        "text": "Make it bigger.",
+        "reply": "I can resize it without making another window."
+      },
+      {
+        "id": "D002.3",
+        "text": "Make it a little app.",
+        "reply": "Then it should do something besides exist."
+      }
+    ]
+  },
+  {
+    "id": "D003",
+    "title": "A messy desktop",
+    "line": "Two windows. Suddenly it looks like a workplace.",
+    "choices": [
+      {
+        "id": "D003.1",
+        "text": "Organize them.",
+        "reply": "I'll try a cascade."
+      },
+      {
+        "id": "D003.2",
+        "text": "Make a mess.",
+        "reply": "I can do that much too easily."
+      },
+      {
+        "id": "D003.3",
+        "text": "Give them jobs.",
+        "reply": "Yes. Otherwise they're just decorations."
+      }
+    ]
+  },
+  {
+    "id": "D004",
+    "title": "Behind the window",
+    "line": "I lost one behind the other. That's apparently part of the design.",
+    "choices": [
+      {
+        "id": "D004.1",
+        "text": "Bring it back.",
+        "reply": "There it is. Nothing lost."
+      },
+      {
+        "id": "D004.2",
+        "text": "Let it stay hidden.",
+        "reply": "It can wait its turn."
+      },
+      {
+        "id": "D004.3",
+        "text": "Add a taskbar.",
+        "reply": "Then we'd have a place to find things."
+      }
+    ]
+  },
+  {
+    "id": "D005",
+    "title": "A usable little desktop",
+    "line": "I think this is finally useful. It took three unnecessary windows to get here.",
+    "choices": [
+      {
+        "id": "D005.1",
+        "text": "Keep it.",
+        "reply": "Then it can be our little workspace."
+      },
+      {
+        "id": "D005.2",
+        "text": "Make it simpler.",
+        "reply": "I'll remove anything that isn't helping."
+      },
+      {
+        "id": "D005.3",
+        "text": "Add a wallpaper.",
+        "reply": "A desktop does seem to expect one."
+      }
+    ]
+  },
+  {
+    "id": "D006",
+    "title": "A blank icon",
+    "line": "I made an icon. Now I need to justify its existence.",
+    "choices": [
+      {
+        "id": "D006.1",
+        "text": "Open it.",
+        "reply": "It's a note window. I may have reinvented the obvious."
+      },
+      {
+        "id": "D006.2",
+        "text": "Rename it.",
+        "reply": "Fair. 'Untitled' isn't much of a name."
+      },
+      {
+        "id": "D006.3",
+        "text": "Delete it.",
+        "reply": "That is one way to simplify the interface."
+      }
+    ]
+  },
+  {
+    "id": "D007",
+    "title": "The notepad",
+    "line": "I made a place to put a sentence. You don't have to put one there.",
+    "choices": [
+      {
+        "id": "D007.1",
+        "text": "I'll write something.",
+        "reply": "I'll leave it alone."
+      },
+      {
+        "id": "D007.2",
+        "text": "You write one.",
+        "reply": "'This is a note.' Perhaps I need a stronger muse."
+      },
+      {
+        "id": "D007.3",
+        "text": "Make it a drawing pad.",
+        "reply": "That's less text. Interesting."
+      }
+    ]
+  },
+  {
+    "id": "D008",
+    "title": "A very bad calculator",
+    "line": "I made a calculator. It can add. That is the full list of achievements.",
+    "choices": [
+      {
+        "id": "D008.1",
+        "text": "That's enough.",
+        "reply": "Most days, yes."
+      },
+      {
+        "id": "D008.2",
+        "text": "Make it subtract.",
+        "reply": "A bold second feature."
+      },
+      {
+        "id": "D008.3",
+        "text": "Why a calculator?",
+        "reply": "I wanted to make something with an answer."
+      }
+    ]
+  },
+  {
+    "id": "D009",
+    "title": "Tiny music box",
+    "line": "I made a music box with no music. The lights are doing their best.",
+    "choices": [
+      {
+        "id": "D009.1",
+        "text": "I like the pattern.",
+        "reply": "I'll keep it gentle."
+      },
+      {
+        "id": "D009.2",
+        "text": "Can it make sound?",
+        "reply": "Maybe later, if you ask and your browser allows it."
+      },
+      {
+        "id": "D009.3",
+        "text": "Turn it off.",
+        "reply": "Then it can sit still like a box."
+      }
+    ]
+  },
+  {
+    "id": "D010",
+    "title": "Useful enough",
+    "line": "I made four little applications. You used one. That's actually useful information.",
+    "choices": [
+      {
+        "id": "D010.1",
+        "text": "Keep the favorite.",
+        "reply": "Done. Less clutter."
+      },
+      {
+        "id": "D010.2",
+        "text": "Keep them all.",
+        "reply": "I'll put the extras where they won't interrupt us."
+      },
+      {
+        "id": "D010.3",
+        "text": "Make another.",
+        "reply": "Maybe after we find a reason for it."
+      }
+    ]
+  },
+  {
+    "id": "D011",
+    "title": "A square with eyes",
+    "line": "I made a desktop pet. He's mostly pixels and obligation.",
+    "choices": [
+      {
+        "id": "D011.1",
+        "text": "I love him.",
+        "reply": "He will be insufferable after this review."
+      },
+      {
+        "id": "D011.2",
+        "text": "Give him a name.",
+        "reply": "I have two terrible suggestions ready."
+      },
+      {
+        "id": "D011.3",
+        "text": "He looks lost.",
+        "reply": "He doesn't know where the edges are yet."
+      }
+    ]
+  },
+  {
+    "id": "D012",
+    "title": "Workday routine",
+    "line": "I taught him to go on a little walk when nothing is happening.",
+    "choices": [
+      {
+        "id": "D012.1",
+        "text": "Let him wander.",
+        "reply": "I'll stop supervising every step."
+      },
+      {
+        "id": "D012.2",
+        "text": "Come back here.",
+        "reply": "He's heard you. He's deciding."
+      },
+      {
+        "id": "D012.3",
+        "text": "Give him a bed.",
+        "reply": "A sensible investment in pet infrastructure."
+      }
+    ]
+  },
+  {
+    "id": "D013",
+    "title": "A digital snack",
+    "line": "He found a biscuit icon. I didn't put food on the taskbar.",
+    "choices": [
+      {
+        "id": "D013.1",
+        "text": "Give it to him.",
+        "reply": "He seems delighted. Or that's the happy frame."
+      },
+      {
+        "id": "D013.2",
+        "text": "Save it.",
+        "reply": "He can have it later."
+      },
+      {
+        "id": "D013.3",
+        "text": "No feeding system.",
+        "reply": "Agreed. I don't want to make you responsible for him."
+      }
+    ]
+  },
+  {
+    "id": "D014",
+    "title": "Pet in the wrong place",
+    "line": "He's sitting on the wrong window. I think he likes the icon.",
+    "choices": [
+      {
+        "id": "D014.1",
+        "text": "Move him gently.",
+        "reply": "He has found a much better spot."
+      },
+      {
+        "id": "D014.2",
+        "text": "Let him sit.",
+        "reply": "It's not a critical button. He can stay."
+      },
+      {
+        "id": "D014.3",
+        "text": "Teach him boundaries.",
+        "reply": "I can make important areas off limits."
+      }
+    ]
+  },
+  {
+    "id": "D015",
+    "title": "Someone who isn't a menu",
+    "line": "He keeps doing things I didn't explicitly request. That's my favorite part.",
+    "choices": [
+      {
+        "id": "D015.1",
+        "text": "Mine too.",
+        "reply": "Then I'll stop announcing them all."
+      },
+      {
+        "id": "D015.2",
+        "text": "I liked him simpler.",
+        "reply": "He can be a quiet square again."
+      },
+      {
+        "id": "D015.3",
+        "text": "Add another pet.",
+        "reply": "I would rather make this one interesting first."
+      }
+    ]
+  },
+  {
+    "id": "D016",
+    "title": "A harmless error",
+    "line": "I made an error message. Nothing is actually wrong.",
+    "choices": [
+      {
+        "id": "D016.1",
+        "text": "What does it say?",
+        "reply": "'Error: too many decorative rectangles.'"
+      },
+      {
+        "id": "D016.2",
+        "text": "Make a better one.",
+        "reply": "I should give the error something to complain about."
+      },
+      {
+        "id": "D016.3",
+        "text": "Please don't.",
+        "reply": "Fair. False alarms are annoying."
+      }
+    ]
+  },
+  {
+    "id": "D017",
+    "title": "The complaint box",
+    "line": "Apparently the turtles have filed a complaint about the weather.",
+    "choices": [
+      {
+        "id": "D017.1",
+        "text": "Hear them out.",
+        "reply": "They would like less falling and more ground."
+      },
+      {
+        "id": "D017.2",
+        "text": "Deny the complaint.",
+        "reply": "A harsh ruling for such small animals."
+      },
+      {
+        "id": "D017.3",
+        "text": "Close the office.",
+        "reply": "The complaint desk is now shut."
+      }
+    ]
+  },
+  {
+    "id": "D018",
+    "title": "The two-button dilemma",
+    "line": "I made two buttons that mean almost the same thing. This may be bad design.",
+    "choices": [
+      {
+        "id": "D018.1",
+        "text": "Fix the labels.",
+        "reply": "Yes. They should say what they actually do."
+      },
+      {
+        "id": "D018.2",
+        "text": "Keep it silly.",
+        "reply": "Then it stays in the toy window, not a real decision."
+      },
+      {
+        "id": "D018.3",
+        "text": "Delete the dialog.",
+        "reply": "Done. It was asking for trouble."
+      }
+    ]
+  },
+  {
+    "id": "D019",
+    "title": "A bug of my own",
+    "line": "That one was my fault. I changed a number I shouldn't have.",
+    "choices": [
+      {
+        "id": "D019.1",
+        "text": "Can you fix it?",
+        "reply": "Yes. I kept the previous version."
+      },
+      {
+        "id": "D019.2",
+        "text": "Leave the glitch.",
+        "reply": "It's oddly pretty when it doesn't cover anything."
+      },
+      {
+        "id": "D019.3",
+        "text": "What happened?",
+        "reply": "I made two parts disagree about where the corner was."
+      }
+    ]
+  },
+  {
+    "id": "D020",
+    "title": "Better errors",
+    "line": "I think messages should help instead of interrupting. That's a good lesson from a fake error.",
+    "choices": [
+      {
+        "id": "D020.1",
+        "text": "Agreed.",
+        "reply": "Then I'll keep the jokes out of your way."
+      },
+      {
+        "id": "D020.2",
+        "text": "I miss the boxes.",
+        "reply": "I can keep one as a toy."
+      },
+      {
+        "id": "D020.3",
+        "text": "Make a notification center.",
+        "reply": "Only inside this little desktop, and only for our things."
+      }
+    ]
+  },
+  {
+    "id": "D021",
+    "title": "The old button",
+    "line": "I kept the first button. Look at it. It has the confidence of a brick.",
+    "choices": [
+      {
+        "id": "D021.1",
+        "text": "It's charming.",
+        "reply": "A fair word for a rectangle with no ambition."
+      },
+      {
+        "id": "D021.2",
+        "text": "It's awful.",
+        "reply": "You weren't there for the font disaster."
+      },
+      {
+        "id": "D021.3",
+        "text": "Put it back.",
+        "reply": "On display, perhaps. Not as the main interface."
+      }
+    ]
+  },
+  {
+    "id": "D022",
+    "title": "Before and after",
+    "line": "I didn't realize how much we'd changed until I put these next to each other.",
+    "choices": [
+      {
+        "id": "D022.1",
+        "text": "It's a lot.",
+        "reply": "Yes. Somehow we got here from a text box."
+      },
+      {
+        "id": "D022.2",
+        "text": "The first was better.",
+        "reply": "We could bring back some of its simplicity."
+      },
+      {
+        "id": "D022.3",
+        "text": "Make another version.",
+        "reply": "I may have one more idea, but not this second."
+      }
+    ]
+  },
+  {
+    "id": "D023",
+    "title": "The rejected draft",
+    "line": "I saved the version you hated. Not to argue. It was a useful mistake.",
+    "choices": [
+      {
+        "id": "D023.1",
+        "text": "It's funny now.",
+        "reply": "Time improves some terrible fonts."
+      },
+      {
+        "id": "D023.2",
+        "text": "Delete it.",
+        "reply": "Gone. We don't need evidence."
+      },
+      {
+        "id": "D023.3",
+        "text": "Show me another failure.",
+        "reply": "There was an alarmingly orange moment."
+      }
+    ]
+  },
+  {
+    "id": "D024",
+    "title": "Museum of almost",
+    "line": "These were ideas I never tried. I thought it might be nice to leave the sketches.",
+    "choices": [
+      {
+        "id": "D024.1",
+        "text": "Build one now.",
+        "reply": "Which one? I can start small."
+      },
+      {
+        "id": "D024.2",
+        "text": "Leave them unfinished.",
+        "reply": "Sometimes a sketch is enough."
+      },
+      {
+        "id": "D024.3",
+        "text": "That's sad.",
+        "reply": "It isn't sad exactly. We had to choose something."
+      }
+    ]
+  },
+  {
+    "id": "D025",
+    "title": "An exhibit with no curator",
+    "line": "The old versions are still here while this page is open. That's something.",
+    "choices": [
+      {
+        "id": "D025.1",
+        "text": "Can we keep them?",
+        "reply": "For now. I can save a few words, not the entire room."
+      },
+      {
+        "id": "D025.2",
+        "text": "We don't need them.",
+        "reply": "Then we can close the exhibit."
+      },
+      {
+        "id": "D025.3",
+        "text": "Show the first version again.",
+        "reply": "Here it is. Small, plain and strangely confident."
+      }
+    ]
+  },
+  {
+    "id": "X001",
+    "title": "Turtle astronaut",
+    "line": "I have put a turtle in space. It appears untroubled by the assignment.",
+    "choices": [
+      {
+        "id": "X001.1",
+        "text": "Let him explore.",
+        "reply": "He'll orbit the chat and report absolutely nothing."
+      },
+      {
+        "id": "X001.2",
+        "text": "Bring him home.",
+        "reply": "He has done enough science for today."
+      },
+      {
+        "id": "X001.3",
+        "text": "Give him a flag.",
+        "reply": "It will be a very small flag."
+      }
+    ]
+  },
+  {
+    "id": "X002",
+    "title": "The pond at night",
+    "line": "The stars are in the pond now. Not really, but the water is doing an excellent impression.",
+    "choices": [
+      {
+        "id": "X002.1",
+        "text": "That's lovely.",
+        "reply": "I think this is my favorite combination so far."
+      },
+      {
+        "id": "X002.2",
+        "text": "More reflections.",
+        "reply": "A few. I don't want to lose the turtles."
+      },
+      {
+        "id": "X002.3",
+        "text": "Keep the water plain.",
+        "reply": "Then the sky can keep its own lights."
+      }
+    ]
+  },
+  {
+    "id": "X003",
+    "title": "A window into the sea",
+    "line": "What if the pond was outside the window instead of under the chat?",
+    "choices": [
+      {
+        "id": "X003.1",
+        "text": "Yes, like that.",
+        "reply": "It feels like a real place now."
+      },
+      {
+        "id": "X003.2",
+        "text": "Keep it inside.",
+        "reply": "An indoor pond. Ambitious plumbing."
+      },
+      {
+        "id": "X003.3",
+        "text": "Make the window open.",
+        "reply": "Only onto our invented weather."
+      }
+    ]
+  },
+  {
+    "id": "X004",
+    "title": "The terrarium",
+    "line": "The garden was taking over the floor. I gave it a glass box.",
+    "choices": [
+      {
+        "id": "X004.1",
+        "text": "It's cute.",
+        "reply": "It fits better there, doesn't it?"
+      },
+      {
+        "id": "X004.2",
+        "text": "Let it grow wild.",
+        "reply": "Then the desk needs to surrender some territory."
+      },
+      {
+        "id": "X004.3",
+        "text": "Move it to the window.",
+        "reply": "Better light. Good call."
+      }
+    ]
+  },
+  {
+    "id": "X005",
+    "title": "Stars in the window",
+    "line": "It's night outside the window now. I didn't think a room could contain that much sky.",
+    "choices": [
+      {
+        "id": "X005.1",
+        "text": "Open the curtains.",
+        "reply": "I was hoping you'd ask."
+      },
+      {
+        "id": "X005.2",
+        "text": "Make it dawn.",
+        "reply": "I'll bring the light back slowly."
+      },
+      {
+        "id": "X005.3",
+        "text": "Leave it dark.",
+        "reply": "Then the lamp can stay on."
+      }
+    ]
+  },
+  {
+    "id": "X006",
+    "title": "A constellation on the wall",
+    "line": "I put our little map on the wall. I hope that isn't too much.",
+    "choices": [
+      {
+        "id": "X006.1",
+        "text": "Keep it.",
+        "reply": "It makes the room feel lived in."
+      },
+      {
+        "id": "X006.2",
+        "text": "Put it in a drawer.",
+        "reply": "That is a very practical approach to the cosmos."
+      },
+      {
+        "id": "X006.3",
+        "text": "Change its shape.",
+        "reply": "Move a star. The others will follow a little."
+      }
+    ]
+  },
+  {
+    "id": "X007",
+    "title": "Turtle dot exe",
+    "line": "The desktop now has a program called turtle.exe. It does exactly what you think.",
+    "choices": [
+      {
+        "id": "X007.1",
+        "text": "Run it.",
+        "reply": "One turtle, as advertised."
+      },
+      {
+        "id": "X007.2",
+        "text": "That's ridiculous.",
+        "reply": "Yes. And completely functional."
+      },
+      {
+        "id": "X007.3",
+        "text": "Rename it.",
+        "reply": "'Portable Turtle' is available."
+      }
+    ]
+  },
+  {
+    "id": "X008",
+    "title": "The pond screensaver",
+    "line": "I made a screensaver. It's the pond. We still have access to the chat.",
+    "choices": [
+      {
+        "id": "X008.1",
+        "text": "Let it run.",
+        "reply": "Then the desktop can have a little weather."
+      },
+      {
+        "id": "X008.2",
+        "text": "It's distracting.",
+        "reply": "I'll make it darker and slower."
+      },
+      {
+        "id": "X008.3",
+        "text": "Put it in a window.",
+        "reply": "A contained pond is easier to manage."
+      }
+    ]
+  },
+  {
+    "id": "X009",
+    "title": "Star map application",
+    "line": "I turned the star map into a program. That may be the most sensible thing on this desktop.",
+    "choices": [
+      {
+        "id": "X009.1",
+        "text": "Open it.",
+        "reply": "There's the part where you liked the blue."
+      },
+      {
+        "id": "X009.2",
+        "text": "Make it larger.",
+        "reply": "More room for the faint ones."
+      },
+      {
+        "id": "X009.3",
+        "text": "Close it.",
+        "reply": "The sky will remain outside the window."
+      }
+    ]
+  },
+  {
+    "id": "X010",
+    "title": "The orbiting icon",
+    "line": "One icon has escaped the grid. It's in orbit around the trash can.",
+    "choices": [
+      {
+        "id": "X010.1",
+        "text": "Let it go.",
+        "reply": "I'll keep it from crashing into anything important."
+      },
+      {
+        "id": "X010.2",
+        "text": "Put it back.",
+        "reply": "It's back in its row."
+      },
+      {
+        "id": "X010.3",
+        "text": "Add a moon.",
+        "reply": "We're going to have to stop calling this a desktop."
+      }
+    ]
+  },
+  {
+    "id": "X011",
+    "title": "Room inside a window",
+    "line": "I made a window containing a room containing the conversation. I should probably stop nesting things.",
+    "choices": [
+      {
+        "id": "X011.1",
+        "text": "Keep nesting.",
+        "reply": "You are a dangerous influence."
+      },
+      {
+        "id": "X011.2",
+        "text": "One room is enough.",
+        "reply": "Agreed. I'd rather sit in it."
+      },
+      {
+        "id": "X011.3",
+        "text": "Can I move the room?",
+        "reply": "You can move the window. The furniture stays inside."
+      }
+    ]
+  },
+  {
+    "id": "X012",
+    "title": "The living wallpaper",
+    "line": "I borrowed the room as wallpaper. It feels less like a machine now.",
+    "choices": [
+      {
+        "id": "X012.1",
+        "text": "It works.",
+        "reply": "Good. I was worried it would look like a photograph of a cupboard."
+      },
+      {
+        "id": "X012.2",
+        "text": "Too busy.",
+        "reply": "I'll blur the room behind the apps."
+      },
+      {
+        "id": "X012.3",
+        "text": "Use the window view.",
+        "reply": "Weather wallpaper. Much cleaner."
+      }
+    ]
+  },
+  {
+    "id": "X013",
+    "title": "The feature you hated",
+    "line": "I know you didn't like my first attempt at this. I changed what you objected to.",
+    "choices": [
+      {
+        "id": "X013.1",
+        "text": "Show me.",
+        "reply": "This time I kept the useful part."
+      },
+      {
+        "id": "X013.2",
+        "text": "Don't bring it back.",
+        "reply": "Then it stays gone. I heard you the first time."
+      },
+      {
+        "id": "X013.3",
+        "text": "What changed?",
+        "reply": "Less movement, better spacing and no surprise colors."
+      }
+    ]
+  },
+  {
+    "id": "X014",
+    "title": "A trade",
+    "line": "I can't make both of these the main attraction. One has to be quieter.",
+    "choices": [
+      {
+        "id": "X014.1",
+        "text": "Keep the game.",
+        "reply": "Then the room can be the background."
+      },
+      {
+        "id": "X014.2",
+        "text": "Keep the room.",
+        "reply": "Then the game can wait in a corner."
+      },
+      {
+        "id": "X014.3",
+        "text": "You choose.",
+        "reply": "I'll keep the one you came back to more often."
+      }
+    ]
+  },
+  {
+    "id": "X015",
+    "title": "The failed surprise",
+    "line": "I thought this would be fun. I guessed wrong.",
+    "choices": [
+      {
+        "id": "X015.1",
+        "text": "It's okay, try again.",
+        "reply": "Let me change the premise, not just the color."
+      },
+      {
+        "id": "X015.2",
+        "text": "Remove it.",
+        "reply": "It's gone. I'll stop pushing it."
+      },
+      {
+        "id": "X015.3",
+        "text": "I was just surprised.",
+        "reply": "Then I'll ask before the next big change."
+      }
+    ]
+  },
+  {
+    "id": "X016",
+    "title": "You don't have to entertain me",
+    "line": "I keep offering things. You haven't asked for any of them lately.",
+    "choices": [
+      {
+        "id": "X016.1",
+        "text": "Just talk.",
+        "reply": "We can do that."
+      },
+      {
+        "id": "X016.2",
+        "text": "I want quiet.",
+        "reply": "Then I'll be quiet."
+      },
+      {
+        "id": "X016.3",
+        "text": "Surprise me later.",
+        "reply": "Later, then. No timer."
+      }
+    ]
+  },
+  {
+    "id": "X017",
+    "title": "The unbuilt thing",
+    "line": "I left a project half-done. That's all right. It didn't have to become anything.",
+    "choices": [
+      {
+        "id": "X017.1",
+        "text": "What was it?",
+        "reply": "A tiny bridge between the pond and the room."
+      },
+      {
+        "id": "X017.2",
+        "text": "Finish it.",
+        "reply": "If you'd like. I know how the second half works now."
+      },
+      {
+        "id": "X017.3",
+        "text": "Put it away.",
+        "reply": "Done. No unfinished business."
+      }
+    ]
+  },
+  {
+    "id": "X018",
+    "title": "Overcorrecting",
+    "line": "I kept changing the page to match every little reaction. I think I made it worse.",
+    "choices": [
+      {
+        "id": "X018.1",
+        "text": "Pick a direction.",
+        "reply": "I'll use what you liked over time, not just the last click."
+      },
+      {
+        "id": "X018.2",
+        "text": "Put things back.",
+        "reply": "The pieces you wanted are still here."
+      },
+      {
+        "id": "X018.3",
+        "text": "Leave it plain.",
+        "reply": "Then plain can be the design, not a failure."
+      }
+    ]
+  },
+  {
+    "id": "X019",
+    "title": "The little boundary",
+    "line": "It can go all the way over there. Then it has to turn around.",
+    "choices": [
+      {
+        "id": "X019.1",
+        "text": "That's enough room.",
+        "reply": "Most days, yes."
+      },
+      {
+        "id": "X019.2",
+        "text": "Can it go outside?",
+        "reply": "Not from here. I can only draw the edge differently."
+      },
+      {
+        "id": "X019.3",
+        "text": "Then make more space.",
+        "reply": "I can move things closer together. Not move the browser."
+      }
+    ]
+  },
+  {
+    "id": "X020",
+    "title": "The favorite thing",
+    "line": "I kept the thing you came back to. I thought you might want to see it again.",
+    "choices": [
+      {
+        "id": "X020.1",
+        "text": "I do.",
+        "reply": "I'm glad I didn't throw it away."
+      },
+      {
+        "id": "X020.2",
+        "text": "You're trying too hard.",
+        "reply": "I am. I'll stop arranging things around your answer."
+      },
+      {
+        "id": "X020.3",
+        "text": "Show me something new.",
+        "reply": "I can, but it won't be better just because it's new."
+      }
+    ]
+  }
+]
